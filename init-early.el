@@ -5,7 +5,6 @@
 (require 'init-yasnippet)
 (require 'init-lsp-treemacs) 
 (require 'init-helm-lsp) 
-(require 'init-projectile) 
 (require 'init-hydra) 
 (require 'init-flycheck) 
 (require 'init-company) 
@@ -28,6 +27,7 @@
 (require 'init-undo-tree)
 (require 'init-evil)
 (require 'init-magit)
+(require 'init-persp-projectile)
 
 
 (require 'init-treemacs)
@@ -38,6 +38,7 @@
 (require 'init-web)
 (require 'init-lsp-volar)
 
+(require 'init-projectile) 
 
 
 (require 'init-end-executed)

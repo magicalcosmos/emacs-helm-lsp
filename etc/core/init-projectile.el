@@ -1,10 +1,9 @@
 (defun bl/switch-project-action ()
-  "Switch to a workspace with the project name and start `magit-status'."
-  ;; TODO: Switch to EXWM workspace 1?
-  (persp-switch (projectile-project-name))
-  (magit-status))
-(use-package ripgrep
-  :ensure t)
+  "Open latest edited buffer when switched the  exist project, find files when switched to a new project."                                                                                                         
+  (if  (null (projectile-project-buffer-files ))                                                                                                                                                                   
+    (projectile-find-file)                                                                                                                                                                                         
+    (switch-to-buffer (get-buffer (car (projectile-project-buffer-files)))))  
+)
 
 (use-package projectile
   :ensure t
@@ -15,8 +14,7 @@
   (projectile-mode +1)
   (when (file-directory-p "~/workspace/web")
     (setq projectile-project-search-path '("~/workspace/web")))
-  (setq projectile-switch-project-action #'bl/switch-project-action))
-
+  (setq projectile-switch-project-action #'bl/switch-project-action))                                                                                                                                                                                             
   
 (global-set-key (kbd "M-p") #'projectile-find-file)
 
