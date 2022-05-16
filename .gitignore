@@ -1,0 +1,11 @@
+.cache
+elpa
+.history
+auto-save-list
+.lsp*
+.dap*
+projects
+dist*
+transient
+
+projectile-bookmarks*
