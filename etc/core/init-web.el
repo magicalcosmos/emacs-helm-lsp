@@ -8,7 +8,8 @@
   ("\\.html?\\'" . web-mode)
   ("\\.jsx?\\'" . web-mode)
   ("\\.tsx?\\'" . web-mode)
-  ("\\.vue?\\'" . web-mode))
+  ("\\.vue?\\'" . web-mode)
+)
 :commands web-mode)
 
 (provide 'init-web)
