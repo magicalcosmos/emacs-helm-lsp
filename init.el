@@ -231,6 +231,12 @@
   :ensure t)
 ;;(org-babel-load-file (expand-file-name "~/.emacs.d/my-init.org"))
 
+;; get system type
+(defconst *is-mac* (eq system-type 'darwin))
+(defconst *is-linux* (eq system-type 'gnu/linux))
+(defconst *is-windows* (or (eq system-type 'ms-dos)(eq system-type 'windows-nt)))
+(defconst CACHE-DIR (expand-file-name "cache/" user-emacs-directory))
+
 (add-to-list 'load-path "~/.emacs.d/etc/lisp")
 (add-to-list 'load-path "~/.emacs.d/etc/core")
 (add-to-list 'load-path "~/.emacs.d/theme")
@@ -248,11 +254,6 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load-file custom-file))
-
-;; get system type
-(defconst *is-mac* (eq system-type 'darwin))
-(defconst *is-linux* (eq system-type 'gnu/linux))
-(defconst *is-windows* (or (eq system-type 'ms-dos)(eq system-type 'windows-nt)))
 
 
 ;; command key to meta for default
