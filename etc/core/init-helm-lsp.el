@@ -7,4 +7,13 @@
 (define-key global-map [remap execute-extended-command] #'helm-M-x)
 (define-key global-map [remap switch-to-buffer] #'helm-mini)
 
+(define-key lsp-mode-map [remap xref-find-apropos] #'helm-lsp-workspace-symbol)
+
+
+(bl/leader-key-def
+"f"   '(:ignore t :which-key "files")
+"ff"  '(helm-find-files :which-key "open file")
+"fr"  '(helm-recentf :which-key "recent files")
+"fR"  '(revert-buffer :which-key "revert file"))
+
 (provide 'init-helm-lsp)

@@ -130,6 +130,12 @@
 ;; yes to y, no to n
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; disable cl warning
+(setq byte-compile-warnings '(cl-functions))
+
+;; 缓解在快速移动时大量代码的语法高亮
+(setq redisplay-skip-fontification-on-input t)
+
 ;; buffer to right
 ; (setq split-width-threshold nil)
 ;
@@ -198,8 +204,19 @@
 
 (require 'package)
 ;;optimise loading package
+;; (setq package-archives
+;;       '(("gnu"   . "https://elpa.gnu.org/packages/")
+;;         ("melpa" . "https://melpa.org/packages/")
+;;         ("melpa-stable" . "https://stable.melpa.org/packages/")))
+
+;; set third party of source
+;; (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+;;                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 (setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
                          ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
+;; (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+;;                          ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+
 
 (package-initialize)
 

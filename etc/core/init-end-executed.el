@@ -8,4 +8,6 @@
 (with-eval-after-load 'js
   (define-key js-mode-map (kbd "M-.") nil))
 
+(setq lsp-javascript-display-inlay-hints "none")
+
 (provide 'init-end-executed)

@@ -6,7 +6,7 @@
   (lsp-keep-workspace-alive t)
   (lsp-enable-xref t)
   (lsp-enable-imenu t)
-  (lsp-enable-completion-at-point nil)
+  (lsp-enable-completion-at-point t)
   :bind (
     ("C-c l" . lsp-command-map)
     ("C-c d" . lsp-describe-thing-at-point)
@@ -25,11 +25,10 @@
   (setq lsp-log-io nil) ;; Don't log everything = speed
   (setq lsp-keymap-prefix "C-c l")
   (setq lsp-restart 'auto-restart)
-  (setq lsp-ui-sideline-show-diagnostics t)
-  (setq lsp-ui-sideline-show-hover t)
-  (setq lsp-ui-sideline-show-code-actions t)
-  (setq lsp-eldoc-render-all t)
-  (setq lsp-javascript-display-inlay-hints t)
+  ;; (setq lsp-ui-sideline-show-diagnostics t)
+  ;; (setq lsp-ui-sideline-show-hover t)
+  ;;(setq lsp-ui-sideline-show-code-actions t)
+  ;; (setq lsp-eldoc-render-all t)
 
   (add-hook 'prog-mode-hook #'lsp)
   (add-hook 'go-mode-hook #'lsp)
@@ -45,42 +44,39 @@
   (add-hook 'shell-mode-hook #'lsp)
   (add-hook 'css-mode-hook #'lsp)
   (add-hook 'vue-mode-hook #'lsp)
-
-  (setq company-minimum-prefix-length 1
-        company-idle-delay 0.500) ;; default is 0.2
 )
 
 
-(use-package lsp-ui
-  :ensure t
-  :custom-face
-  (lsp-ui-doc-background ((t (:background ni))))
-  :init (setq lsp-ui-doc-enable t
-              lsp-ui-doc-include-signature t               
+;; (use-package lsp-ui
+;;   :ensure t
+;;   :custom-face
+;;   (lsp-ui-doc-background ((t (:background nil))))
+;;   :init (setq lsp-ui-doc-enable t
+;;               lsp-ui-doc-include-signature t               
 
-              lsp-enable-snippet nil
-              lsp-ui-sideline-enable nil
-              lsp-ui-peek-enable nil
+;;               lsp-enable-snippet nil
+;;               lsp-ui-sideline-enable nil
+;;               lsp-ui-peek-enable nil
 
-              lsp-ui-doc-position              'at-point
-              lsp-ui-doc-header                nil
-              lsp-ui-doc-border                "white"
-              lsp-ui-doc-include-signature     t
-              lsp-ui-sideline-update-mode      'point
-              lsp-ui-sideline-delay            1
-              lsp-ui-sideline-ignore-duplicate t
-              lsp-ui-peek-always-show          t
-              lsp-ui-flycheck-enable           nil
-              )
-  :bind (:map lsp-ui-mode-map
-              ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
-              ([remap xref-find-references] . lsp-ui-peek-find-references)
-              ("C-c u" . lsp-ui-imenu))
-  :config
-  (setq lsp-ui-sideline-ignore-duplicate t)
-  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
+;;               lsp-ui-doc-position              'at-point
+;;               lsp-ui-doc-header                nil
+;;               lsp-ui-doc-border                "white"
+;;               lsp-ui-doc-include-signature     t
+;;               lsp-ui-sideline-update-mode      'point
+;;               lsp-ui-sideline-delay            1
+;;               lsp-ui-sideline-ignore-duplicate t
+;;               lsp-ui-peek-always-show          t
+;;               lsp-ui-flycheck-enable           nil
+;;               )
+;;   :bind (:map lsp-ui-mode-map
+;;               ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
+;;               ([remap xref-find-references] . lsp-ui-peek-find-references)
+;;               ("C-c u" . lsp-ui-imenu))
+;;   :config
+;;   (setq lsp-ui-sideline-ignore-duplicate t)
+;;   (add-hook 'lsp-mode-hook 'lsp-ui-mode))
 
-(setq lsp-prefer-capf t)
+;; (setq lsp-prefer-capf t)
 
 
 (provide 'init-lsp-mode)

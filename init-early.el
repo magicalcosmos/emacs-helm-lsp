@@ -1,5 +1,8 @@
 (require 'cc-mode)
 
+
+(require 'init-general)
+
 ;; config as below is from https://github.com/emacs-lsp/lsp-mode/blob/master/docs/tutorials/reactjs-tutorial.md
 (require 'init-lsp-mode)
 (require 'init-yasnippet)
@@ -17,7 +20,6 @@
 
 ;; new config
 (require 'color-rg)
-(require 'init-general)
 
 
 (require 'init-icons)
@@ -39,7 +41,6 @@
 (require 'init-shell)
 
 (require 'init-web)
-(require 'init-lsp-volar)
 
 (require 'init-projectile)
 
