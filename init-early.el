@@ -41,9 +41,6 @@
 (require 'init-web)
 (require 'init-lsp-volar)
 
-
-(require 'init-exwm)
-
 (require 'init-projectile)
 
 

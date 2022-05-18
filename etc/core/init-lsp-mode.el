@@ -1,11 +1,17 @@
 (use-package lsp-mode
-  :commands (lsp lsp-deferred)
   :ensure t
+  :commands (lsp lsp-deferred)
   :custom
-    (lsp-vetur-format-default-formatter-css "none")
-    (lsp-vetur-format-default-formatter-html "none")
-    (lsp-vetur-format-default-formatter-js "none")
-    (lsp-vetur-validation-template nil)
+  (lsp-enable-snippet t)
+  (lsp-keep-workspace-alive t)
+  (lsp-enable-xref t)
+  (lsp-enable-imenu t)
+  (lsp-enable-completion-at-point nil)
+  :bind (
+    ("C-c l" . lsp-command-map)
+    ("C-c d" . lsp-describe-thing-at-point)
+    ("C-c a" . lsp-execute-code-action)
+  )
   :hook (
    (go-mode . lsp-deferred)
    (js-mode . lsp-deferred)
@@ -22,10 +28,59 @@
   (setq lsp-ui-sideline-show-diagnostics t)
   (setq lsp-ui-sideline-show-hover t)
   (setq lsp-ui-sideline-show-code-actions t)
-  (setq lsp-eldoc-render-all t))
-  (setq lsp-javascript-references-code-lens-enabled t)
+  (setq lsp-eldoc-render-all t)
+  (setq lsp-javascript-display-inlay-hints t)
 
-(add-hook 'prog-mode-hook #'lsp)
+  (add-hook 'prog-mode-hook #'lsp)
+  (add-hook 'go-mode-hook #'lsp)
+  (add-hook 'python-mode-hook #'lsp)
+  (add-hook 'c++-mode-hook #'lsp)
+  (add-hook 'rust-mode-hook #'lsp)
+  (add-hook 'html-mode-hook #'lsp)
+  (add-hook 'js-mode-hook #'lsp)
+  (add-hook 'typescript-mode-hook #'lsp)
+  (add-hook 'json-mode-hook #'lsp)
+  (add-hook 'yaml-mode-hook #'lsp)
+  (add-hook 'dockerfile-mode-hook #'lsp)
+  (add-hook 'shell-mode-hook #'lsp)
+  (add-hook 'css-mode-hook #'lsp)
+  (add-hook 'vue-mode-hook #'lsp)
+
+  (setq company-minimum-prefix-length 1
+        company-idle-delay 0.500) ;; default is 0.2
+)
+
+
+(use-package lsp-ui
+  :ensure t
+  :custom-face
+  (lsp-ui-doc-background ((t (:background ni))))
+  :init (setq lsp-ui-doc-enable t
+              lsp-ui-doc-include-signature t               
+
+              lsp-enable-snippet nil
+              lsp-ui-sideline-enable nil
+              lsp-ui-peek-enable nil
+
+              lsp-ui-doc-position              'at-point
+              lsp-ui-doc-header                nil
+              lsp-ui-doc-border                "white"
+              lsp-ui-doc-include-signature     t
+              lsp-ui-sideline-update-mode      'point
+              lsp-ui-sideline-delay            1
+              lsp-ui-sideline-ignore-duplicate t
+              lsp-ui-peek-always-show          t
+              lsp-ui-flycheck-enable           nil
+              )
+  :bind (:map lsp-ui-mode-map
+              ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
+              ([remap xref-find-references] . lsp-ui-peek-find-references)
+              ("C-c u" . lsp-ui-imenu))
+  :config
+  (setq lsp-ui-sideline-ignore-duplicate t)
+  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
+
+(setq lsp-prefer-capf t)
 
 
 (provide 'init-lsp-mode)
