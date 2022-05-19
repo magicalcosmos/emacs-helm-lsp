@@ -38,6 +38,7 @@
   "gmp"  'magit-merge-preview
   "gr"  'magit-rebase)
 
+;; A git blame plugin for emacs inspired by VS Code’s GitLens plugin and Vim plugin
 (use-package blamer
   :ensure t
   :bind (("s-i" . blamer-show-commit-info))
