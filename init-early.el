@@ -22,6 +22,10 @@
 (require 'color-rg)
 
 
+(require 'init-rg)
+
+
+
 (require 'init-icons)
 (require 'init-theme)
 (require 'init-dashboard)
@@ -40,9 +44,15 @@
 
 (require 'init-shell)
 
+(require 'init-separedit)
+
 (require 'init-web)
+
+(require 'init-swiper-ivy-counsel)
 
 (require 'init-projectile)
 
+
+(require 'init-org)
 
 (require 'init-end-executed)

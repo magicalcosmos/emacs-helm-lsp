@@ -27,4 +27,35 @@
   )
 )
 
+;; 附加 Web 开发的各种插件
+(defun web-dev-attached ()
+  ;; 设置关闭自动换行
+  (setq truncate-lines t)
+  ;; 开启显示行号
+  (display-line-numbers-mode +1)
+  ;; 启动行号左侧对齐，并且不随着宽度变化而变化
+  (setq display-line-numbers-width-start t)
+  ;; 开启代码折叠子模式
+  (origami-mode t)
+  (hs-minor-mode t)
+  ;; 设置列参考线：120
+  (setq display-fill-column-indicator-column 120)
+  (display-fill-column-indicator-mode t)
+  ;; 开启代码折叠快捷键
+  (define-key hs-minor-mode-map (kbd "C-c C-f") 'hs-toggle-hiding))
+
+(use-package json-mode
+  :defer 3
+  :mode "\\.json\\'"
+  :config
+  (add-hook 'json-mode-hook
+            (lambda ()
+              ;; 设置自动缩进的宽度
+              (make-local-variable 'js-indent-level)
+              (setq js-indent-level 2)
+              ;; 其它开发设置
+              (web-dev-attached))))
+
+
+
 (provide 'init-web)

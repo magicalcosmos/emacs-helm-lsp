@@ -97,6 +97,31 @@
 (setq initial-buffer-choice  nil)
 (setq inhibit-compacting-font-caches t)
 
+;; 开启 TCP 连接到 Server
+(setq server-use-tcp t)
+
+;; 直接打开软链接地址的文件，而不是打开原始文件的地址
+(setq vc-follow-symlinks nil)
+
+;; 设置自动加载已修改文件
+(global-auto-revert-mode t)
+
+
+;; 设置弹窗窗口出现纵向分隔的极限值：这个值能在 Mac 1440 分辨率下仍然以上下的方式分隔弹出窗口
+(setq split-width-threshold 180)
+
+;; 设置 Emacs 的缺省工作路径
+(setq default-directory "~/")
+
+;; Newline at end of file
+(setq require-final-newline t)
+
+;; 设置选中时编辑直接删除选中值
+(delete-selection-mode t)
+
+
+;; 设置光标样式
+(setq-default cursor-type 'box)
 
 
 (electric-pair-mode t)                       ; 自动补全括号
@@ -200,20 +225,20 @@
 (setq default-buffer-file-coding-system 'utf-8)
 
 ;; Set font size 180 = 18pt
-(set-face-attribute 'default nil :height 180)
+(set-face-attribute 'default nil :height 140)
 
 (require 'package)
 ;;optimise loading package
-;; (setq package-archives
-;;       '(("gnu"   . "https://elpa.gnu.org/packages/")
-;;         ("melpa" . "https://melpa.org/packages/")
-;;         ("melpa-stable" . "https://stable.melpa.org/packages/")))
+(setq package-archives
+      '(("gnu"   . "https://elpa.gnu.org/packages/")
+        ("melpa" . "https://melpa.org/packages/")
+        ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 ;; set third party of source
 ;; (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
 ;;                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
-(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
-                         ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
+;; (setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
+;;                          ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
 ;; (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
 ;;                          ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 
@@ -228,9 +253,36 @@
 
 
 
-(use-package good-scroll
-             :ensure t
-             :init (good-scroll-mode))
+;; 设置平滑滚动
+(setq scroll-step            1
+      scroll-conservatively  10000)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
+
+
+;; 保持鼠标所在行数不变屏幕向下滚动一行
+(global-set-key (kbd "M-n") 'scroll-up-line)
+
+;; 保持鼠标所在行数不变屏幕向上滚动一行
+(global-set-key (kbd "M-p") 'scroll-down-line)
+
+
+;; ;; 滚动半屏设置
+;; (defun window-half-height ()
+;;   (max 1 (/ (- (1- (window-height (selected-window))) 4) 2)))
+;; (defun scroll-up-half ()
+;;   (interactive)
+;;   (scroll-up (window-half-height)))
+;; (defun scroll-down-half ()
+;;   (interactive)
+;;   (scroll-down (window-half-height)))
+;; (global-set-key (kbd "M-N") 'scroll-up-half)
+;; (global-set-key (kbd "M-P") 'scroll-down-half)
+
+;; (use-package good-scroll
+;;              :ensure t
+;;              :init (good-scroll-mode))
 
 
 ;; chords

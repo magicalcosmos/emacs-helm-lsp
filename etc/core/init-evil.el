@@ -49,6 +49,12 @@
 (use-package evil-nerd-commenter
   :ensure t)
 
+(use-package evil-collection
+  :after evil
+  :ensure t
+  :config
+  (evil-collection-init))
+  
 ;; Emacs key bindings
 (global-set-key (kbd "M-/") 'evilnc-comment-or-uncomment-lines)
 

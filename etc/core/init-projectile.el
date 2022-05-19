@@ -26,10 +26,6 @@ Repeated invocations toggle between the two most recently open buffers."
           (kill-buffer))))))
 
 
-
-(use-package all-the-icons-ivy
- :ensure t)
-
 (use-package projectile
   :ensure projectile
   :init
