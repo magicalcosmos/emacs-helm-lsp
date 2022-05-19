@@ -53,5 +53,4 @@
   :config
   (global-blamer-mode 1))
 
-
 (provide 'init-magit)
