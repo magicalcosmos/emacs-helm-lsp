@@ -33,7 +33,7 @@
   (setq-default elfeed-search-filter "@1-week-ago +unread ")
   (global-set-key (kbd "C-x w") 'elfeed)
   (setq elfeed-feeds
-        '("https://news.ycombinator.com"
+        '("https://hnrss.org/newest"
           "https://sspai.com/feed"
           "https://feed.iplaysoft.com"
           "https://www.appinn.com/feed"
