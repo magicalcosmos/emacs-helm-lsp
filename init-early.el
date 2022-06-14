@@ -55,4 +55,6 @@
 
 (require 'init-org)
 
+;; (require 'init-rust)
+
 (require 'init-end-executed)

@@ -1,4 +1,5 @@
 (use-package yasnippet
-  :ensure t)
+  :ensure t
+  :hook ((lsp-mode . yas-minor-mode)))
 
 (provide 'init-yasnippet)
