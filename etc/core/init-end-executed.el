@@ -39,5 +39,24 @@
           "https://www.appinn.com/feed"
           "https://www.ifanr.com/feed")))
 
+(use-package separedit
+ :ensure t)
+
+ ;; Key binding for modes you want edit
+;; or simply bind ‘global-map’ for all.
+(define-key prog-mode-map        (kbd "C-c '") #'separedit)
+(define-key minibuffer-local-map (kbd "C-c '") #'separedit)
+(define-key help-mode-map        (kbd "C-c '") #'separedit)
+
+;; Default major-mode for edit buffer
+;; can also be other mode e.g. ‘org-mode’.
+(setq separedit-default-mode 'markdown-mode)
+
+;; Feature options
+;; (setq separedit-preserve-string-indentation t)
+;; (setq separedit-continue-fill-column t)
+;; (setq separedit-write-file-when-execute-save t)
+;; (setq separedit-remove-trailing-spaces-in-comment t)
+(add-hook 'separedit-buffer-creation-hook #'auto-fill-mode)
 
 (provide 'init-end-executed)

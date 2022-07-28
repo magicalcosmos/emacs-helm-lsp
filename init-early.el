@@ -26,6 +26,9 @@
 
 
 (require 'init-icons)
+
+(require 'init-persp-projectile)
+
 (require 'init-theme)
 (require 'init-dashboard)
 
@@ -33,7 +36,6 @@
 (require 'init-undo-tree)
 (require 'init-evil)
 (require 'init-magit)
-(require 'init-persp-projectile)
 
 
 (require 'init-treemacs)

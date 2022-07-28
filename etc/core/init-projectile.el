@@ -104,6 +104,8 @@ Repeated invocations toggle between the two most recently open buffers."
   (setq project-list-file (concat CACHE-DIR "projects")))
 
 
+  ;; (use-package counsel-projectile
+  ;;   :ensure t)
 
 
 

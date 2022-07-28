@@ -1,10 +1,6 @@
 (use-package web-mode
 :ensure t
 :commands web-mode
-:custom
-(web-mode-markup-indent-offset 2)
-(web-mode-code-indent-offset 2)
-(web-mode-css-indent-offset 2)
 :mode (
   ("\\.html?\\'" . web-mode)
   ("\\.jsx?\\'" . web-mode)
@@ -12,6 +8,22 @@
   ("\\.vue?\\'" . web-mode)
 )
 :config
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-script-padding 2)
+  (setq web-mode-block-padding 2)
+  (setq web-mode-style-padding 2)
+  (setq web-mode-comment-style 2)
+  (setq web-mode-enable-css-colorization t)
+  (setq web-mode-enable-block-face t)
+  (setq web-mode-enable-part-face t)
+  (setq web-mode-enable-comment-interpolation t)
+  (setq web-mode-enable-heredoc-fontification t)
+  (setq web-mode-enable-current-element-highlight t)
+  (setq web-mode-enable-current-column-highlight t)
+
+
   (setq web-mode-engines-alist '(("django"    . "\\.html\\'")))
   (setq web-mode-ac-sources-alist 
     '(("css" . (ac-source-css-property))
