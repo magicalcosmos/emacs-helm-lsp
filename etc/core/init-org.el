@@ -12,6 +12,7 @@
   :config
   (add-hook 'org-mode-hook
             (lambda ()
+              (setq org-bullets-bullet-list '("☯" "✿" "✚" "◉" "❀"))
               ;; org 自动换行
               (setq truncate-lines nil)
               ;; 设置 Bullets
@@ -75,6 +76,13 @@
 ;;         org-roam-server-network-label-truncate-length 60
 ;;         org-roam-server-network-label-wrap-length 20))
 
+
+(use-package org-alert
+  :defer t
+  :config
+  (progn
+    (setq alert-default-style 'libnotify)
+    ))
 
 
 (provide 'init-org)

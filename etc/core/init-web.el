@@ -55,7 +55,6 @@
               (setq js-indent-level 2)
               ;; 其它开发设置
               (web-dev-attached))))
-
-
+              
 
 (provide 'init-web)

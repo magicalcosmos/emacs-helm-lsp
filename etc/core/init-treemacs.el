@@ -68,7 +68,7 @@
        (treemacs-git-mode 'simple))))
   :bind
   (:map global-map
-        ("M-0"       . treemacs-select-window)
+        ("C-0"       . treemacs-select-window)
         ("C-x t 1"   . treemacs-delete-other-windows)
         ("C-x t t"   . treemacs)
         ("C-x t B"   . treemacs-bookmark)
@@ -97,4 +97,12 @@
   :ensure t
   :config (treemacs-set-scope-type 'Perspectives))
 
+  ;; (use-package smart-tab
+  ;;   :config
+  ;;   (progn
+  ;;     (defun @-enable-smart-tab ()
+  ;;       (smart-tab-mode))
+  ;;     (add-hook 'prog-mode-hook '@-enable-smart-tab)
+  ;;     ))
+    
 (provide 'init-treemacs)

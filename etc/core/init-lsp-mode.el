@@ -7,6 +7,7 @@
   (lsp-enable-xref t)
   (lsp-enable-imenu t)
   (lsp-enable-completion-at-point t)
+  (lsp-eldoc-hook nil)
   
   ;; what to use when checking on-save. "check" is default, I prefer clippy
   (lsp-rust-analyzer-cargo-watch-command "clippy")
@@ -20,6 +21,7 @@
   (lsp-rust-analyzer-display-closure-return-type-hints t)
   (lsp-rust-analyzer-display-parameter-hints nil)
   (lsp-rust-analyzer-display-reborrow-hints nil)
+  (lsp-treemacs-sync-mode 1)
   :bind (
     ("C-c l" . lsp-command-map)
     ("C-c d" . lsp-describe-thing-at-point)
@@ -47,6 +49,7 @@
   (add-hook 'go-mode-hook #'lsp)
   (add-hook 'python-mode-hook #'lsp)
   (add-hook 'c++-mode-hook #'lsp)
+  (add-hook 'c-mode-hook #'lsp)
   (add-hook 'rust-mode-hook #'lsp)
   (add-hook 'html-mode-hook #'lsp)
   (add-hook 'js-mode-hook #'lsp)
@@ -60,36 +63,50 @@
 )
 
 
-;; (use-package lsp-ui
-;;   :ensure t
-;;   :custom-face
-;;   (lsp-ui-doc-background ((t (:background nil))))
-;;   :init (setq lsp-ui-doc-enable t
-;;               lsp-ui-doc-include-signature t               
+(use-package lsp-ui
+  :ensure t
+  :custom-face
+  (lsp-ui-doc-background ((t (:background nil))))
+  :init (setq lsp-enable-snippet nil
+              lsp-ui-sideline-enable nil
+              lsp-ui-peek-enable nil
 
-;;               lsp-enable-snippet nil
-;;               lsp-ui-sideline-enable nil
-;;               lsp-ui-peek-enable nil
 
-;;               lsp-ui-doc-position              'at-point
-;;               lsp-ui-doc-header                nil
-;;               lsp-ui-doc-border                "white"
-;;               lsp-ui-doc-include-signature     t
-;;               lsp-ui-sideline-update-mode      'point
-;;               lsp-ui-sideline-delay            1
-;;               lsp-ui-sideline-ignore-duplicate t
-;;               lsp-ui-peek-always-show          t
-;;               lsp-ui-flycheck-enable           nil
-;;               )
-;;   :bind (:map lsp-ui-mode-map
-;;               ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
-;;               ([remap xref-find-references] . lsp-ui-peek-find-references)
-;;               ("C-c u" . lsp-ui-imenu))
-;;   :config
-;;   (setq lsp-ui-sideline-ignore-duplicate t)
-;;   (add-hook 'lsp-mode-hook 'lsp-ui-mode))
+              lsp-ui-doc-enable t
+              lsp-ui-doc-position              'at-point
+              lsp-ui-doc-header                nil
+              lsp-ui-doc-border                "white"
+              lsp-ui-doc-include-signature     t
 
-;; (setq lsp-prefer-capf t)
+              lsp-ui-sideline-show-diagnostics t
+              lsp-ui-sideline-update-mode      'point
+              lsp-ui-sideline-delay            2
+              lsp-ui-sideline-ignore-duplicate t
+              lsp-ui-sideline-show-hover t
+              lsp-ui-sideline-show-code-actions t
+
+
+              lsp-ui-peek-always-show          t
+              lsp-ui-flycheck-enable           nil
+
+              lsp-ui-imenu-auto-refresh t
+
+              lsp-ui-peek-jump-backward t
+              lsp-ui-peek-jump-backward t
+              lsp-ui-peek-find-workspace-symbol "pattern 0"
+              ;; If the server supports custom cross references
+              lsp-ui-peek-find-custom "$cquery/base"
+              lsp-ui-peek-show-directory t
+              )
+  :bind (:map lsp-ui-mode-map
+              ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
+              ([remap xref-find-references] . lsp-ui-peek-find-references)
+              ("C-c u" . lsp-ui-imenu))
+  :config
+  (setq lsp-ui-sideline-ignore-duplicate t)
+  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
+
+(setq lsp-prefer-capf t)
 
 
 (provide 'init-lsp-mode)

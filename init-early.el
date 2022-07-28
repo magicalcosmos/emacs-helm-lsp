@@ -16,8 +16,7 @@
 (require 'init-helm-xref)
 (require 'init-dap-mode)
 (require 'init-json-mode)
-
-
+(require 'init-auto-package-update)
 ;; new config
 (require 'color-rg)
 
