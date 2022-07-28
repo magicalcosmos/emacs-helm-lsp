@@ -3,8 +3,6 @@
 ;;   :ensure t)
 
 ;; (page-break-lines-mode)
-  ;; (use-package counsel-projectile
-  ;;   :ensure t)
 
 (use-package dashboard
   :ensure t
