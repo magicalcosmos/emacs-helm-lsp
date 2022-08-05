@@ -29,14 +29,14 @@
 ;;   (kaolin-treemacs-theme))
 
 
-(use-package zenburn-theme
-  :ensure t
-  :config (load-theme 'zenburn t))
+  ;; (use-package zenburn-theme
+  ;;   :ensure t
+  ;;   :config (load-theme 'zenburn t))
 
 ;; (load-theme 'leuven t)
-;; (use-package dracula-theme
-;;   :ensure t)
-;; (load-theme 'dracula t)
+(use-package dracula-theme
+  :ensure t)
+(load-theme 'dracula t)
 
 ;;gruvbox-dark-medium, gruvbox-dark-soft, gruvbox-dark-hard,
   ;; (use-package gruvbox-theme 
