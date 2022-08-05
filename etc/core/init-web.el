@@ -17,7 +17,7 @@
   (setq web-mode-comment-style 2)
   (setq web-mode-enable-css-colorization t)
   (setq web-mode-enable-block-face t)
-  (setq web-mode-enable-part-face t)
+  (setq web-mode-enable-part-face nil)
   (setq web-mode-enable-comment-interpolation t)
   (setq web-mode-enable-heredoc-fontification t)
   (setq web-mode-enable-current-element-highlight t)
