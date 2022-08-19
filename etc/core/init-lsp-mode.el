@@ -21,6 +21,8 @@
   (lsp-rust-analyzer-display-closure-return-type-hints t)
   (lsp-rust-analyzer-display-parameter-hints nil)
   (lsp-rust-analyzer-display-reborrow-hints nil)
+  (lsp-completion-provider :none) ;; 阻止 lsp 重新设置 company-backend 而覆盖我们 yasnippet 的设置
+  (lsp-headerline-breadcrumb-enable t)
   (lsp-treemacs-sync-mode 1)
   :bind (
     ("C-c l" . lsp-command-map)
@@ -108,5 +110,9 @@
 
 (setq lsp-prefer-capf t)
 
+;; (use-package lsp-ivy
+;;   :ensure t
+;;   :after (lsp-mode))
 
+  
 (provide 'init-lsp-mode)

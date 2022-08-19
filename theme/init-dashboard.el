@@ -22,7 +22,7 @@
 ;;(setq dashboard-startup-banner "~/.emacs.d/emacs-logo.png")
 ; (setq dashboard-projects-switch-function 'counsel-projectile-switch-project)
 ;(setq dashboard-projects-switch-function 'counsel-projectile-switch-project-by-name)
-  ;; (setq projectile-switch-project-action 'projectile-switch-project)
+  ;; (setq projectile-switch-project-action 'projectile-switch-project-by-name)
   (setq dashboard-projects-switch-function 'projectile-persp-switch-project)
   (setq dashboard-week-agenda t)
   ;;(setq dashboard-filter-agenda-entry dashboard-no-filter-agenda)

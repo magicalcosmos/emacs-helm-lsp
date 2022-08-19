@@ -107,7 +107,12 @@ Repeated invocations toggle between the two most recently open buffers."
   ;; (use-package counsel-projectile
   ;;   :ensure t)
 
-
+(defun add-or-switch-project-dwim (dir)
+  "Let elisp do a few chores & set my hands free!"
+  (interactive (list (read-directory-name "Add to known projects: ")))
+  (projectile-add-known-project dir)
+  (find-file dir)
+  (treemacs-add-and-display-current-project))
 
 
 
