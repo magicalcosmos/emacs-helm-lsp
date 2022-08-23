@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: vue3cs
+# key: vue3cs
+# --
+
+<script setup lang="$1ts">
+</script>
