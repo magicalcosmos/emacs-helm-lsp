@@ -1,7 +1,5 @@
 (use-package yasnippet
-  :ensure t)
-
-(require 'yasnippet)
-(yas-global-mode 1)
+  :ensure t
+  :hook ((lsp-mode . yas-minor-mode)))
 
 (provide 'init-yasnippet)

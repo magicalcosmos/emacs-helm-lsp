@@ -19,7 +19,7 @@
 (require 'init-auto-package-update)
 ;; new config
 (require 'color-rg)
-
+(require 'init-js-doc)
 
 (require 'init-rg)
 
