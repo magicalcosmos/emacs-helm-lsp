@@ -199,7 +199,8 @@
 (set-frame-parameter (selected-frame) 'alpha '(90 . 90))
 (add-to-list 'default-frame-alist '(alpha . (90 . 90)))
 (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . fullheight))
 
 ;; The default is 800 kilobytes.  Measured in bytes.
 (setq gc-cons-threshold most-positive-fixnum)
@@ -229,10 +230,10 @@
 
 (require 'package)
 ;;optimise loading package
-(setq package-archives
-      '(("gnu"   . "https://elpa.gnu.org/packages/")
-        ("melpa" . "https://melpa.org/packages/")
-        ("melpa-stable" . "https://stable.melpa.org/packages/")))
+  (setq package-archives
+        '(("gnu"   . "https://elpa.gnu.org/packages/")
+          ("melpa" . "https://melpa.org/packages/")
+          ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 ;; set third party of source
 ;; (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
@@ -344,6 +345,16 @@
 
 ;(global-set-key (kbd "C-x C-b") 'bufler)
 (global-set-key (kbd "C-x C-b") 'projectile-ibuffer)
+
+
+;; (defun my-default-window-setup ()
+;;   "Called by emacs-startup-hook to set up my initial window configuration."
+;;   (split-window-right)
+;;   (other-window 1)
+;;   (find-file "~/Sync/orgFiles/todo.org")
+;;   (other-window 1))
+
+;; (add-hook 'emacs-startup-hook #'my-default-window-setup)
 
 
 ;(setq ido-enable-flex-matching t)
