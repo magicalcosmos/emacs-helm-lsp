@@ -1,5 +1,5 @@
 (use-package lsp-mode
-  :ensure t
+  :straight t
   :commands (lsp lsp-deferred)
   :custom
   (lsp-enable-snippet t)
@@ -12,7 +12,7 @@
   ;; what to use when checking on-save. "check" is default, I prefer clippy
   (lsp-rust-analyzer-cargo-watch-command "clippy")
   (lsp-eldoc-render-all t)
-  (lsp-idle-delay 0.6)
+  (lsp-idle-delay 0.5)
   ;; enable / disable the hints as you prefer:
   (lsp-rust-analyzer-server-display-inlay-hints t)
   (lsp-rust-analyzer-display-lifetime-elision-hints-enable "skip_trivial")
@@ -66,7 +66,7 @@
 
 
 (use-package lsp-ui
-  :ensure t
+  :straight t
   :custom-face
   (lsp-ui-doc-background ((t (:background nil))))
   :init (setq lsp-enable-snippet nil

@@ -308,6 +308,9 @@
 (defconst CACHE-DIR (expand-file-name "cache/" user-emacs-directory))
 
 (add-to-list 'load-path "~/.emacs.d/etc/lisp")
+(add-to-list 'load-path "~/.emacs.d/etc/lisp/lsp-bridge")
+(add-to-list 'load-path "~/.emacs.d/etc/lisp/cape")
+(add-to-list 'load-path "~/.emacs.d/etc/lisp/emacs-forfu-terminal")
 (add-to-list 'load-path "~/.emacs.d/etc/core")
 (add-to-list 'load-path "~/.emacs.d/theme")
 

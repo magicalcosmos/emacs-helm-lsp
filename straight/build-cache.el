@@ -3,7 +3,7 @@
 
 "28.1"
 
-#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2022-10-11 17:54:00" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2022-10-11 17:54:00" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2022-10-11 17:54:00" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "el-get" ("2022-10-11 17:54:00" nil (:type git :host github :repo "dimitri/el-get" :build nil :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :flavor melpa :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2022-10-11 17:54:00" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2022-10-11 17:54:00" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "use-package" ("2022-10-11 17:54:00" nil (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "helm" ("2022-05-07 14:12:42" nil (:type git :flavor melpa :files ("*.el" "emacs-helm.sh" (:exclude "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") "helm-pkg.el") :host github :repo "emacs-helm/helm" :package "helm" :local-repo "helm")) "lsp-volar" ("2022-05-18 11:25:06" ("emacs") (:type git :host github :repo "jadestrong/lsp-volar" :package "lsp-volar" :local-repo "lsp-volar"))))
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2022-10-13 18:04:09" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2022-10-13 18:04:09" nil (:type git :host github :repo "melpa/melpa" :build nil :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2022-10-13 18:04:09" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :build nil :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "el-get" ("2022-10-13 18:04:09" nil (:type git :host github :repo "dimitri/el-get" :build nil :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :flavor melpa :package "el-get" :local-repo "el-get")) "emacsmirror-mirror" ("2022-10-13 18:04:09" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :build nil :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2022-10-13 18:04:09" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "use-package" ("2022-10-13 18:04:09" nil (:type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package" :package "use-package" :local-repo "use-package")) "helm" ("2022-05-07 14:12:42" nil (:type git :flavor melpa :files ("*.el" "emacs-helm.sh" (:exclude "helm.el" "helm-lib.el" "helm-source.el" "helm-multi-match.el" "helm-core-pkg.el") "helm-pkg.el") :host github :repo "emacs-helm/helm" :package "helm" :local-repo "helm")) "lsp-volar" ("2022-05-18 11:25:06" ("emacs") (:type git :host github :repo "jadestrong/lsp-volar" :package "lsp-volar" :local-repo "lsp-volar")) "lsp-mode" ("2022-10-13 18:04:09" ("emacs" "dash" "f" "ht" "spinner" "markdown-mode" "lv") (:type git :flavor melpa :files (:defaults "clients/*.el" "lsp-mode-pkg.el") :host github :repo "emacs-lsp/lsp-mode" :package "lsp-mode" :local-repo "lsp-mode")) "dash" ("2022-10-13 18:04:09" ("emacs") (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "f" ("2022-10-13 18:04:09" ("emacs" "s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "s" ("2022-10-13 18:04:09" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "ht" ("2022-10-13 18:04:09" ("dash") (:type git :flavor melpa :files ("ht.el" "ht-pkg.el") :host github :repo "Wilfred/ht.el" :package "ht" :local-repo "ht.el")) "spinner" ("2022-10-13 18:04:09" ("emacs") (:type git :host github :repo "emacs-straight/spinner" :files ("*" (:exclude ".git")) :package "spinner" :local-repo "spinner")) "markdown-mode" ("2022-10-13 18:04:09" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "lv" ("2022-10-13 18:04:09" nil (:type git :flavor melpa :files ("lv.el" "lv-pkg.el") :host github :repo "abo-abo/hydra" :package "lv" :local-repo "hydra")) "lsp-ui" ("2022-10-13 18:04:09" ("emacs" "dash" "lsp-mode" "markdown-mode") (:type git :flavor melpa :files (:defaults "lsp-ui-doc.html" "resources" "lsp-ui-pkg.el") :host github :repo "emacs-lsp/lsp-ui" :package "lsp-ui" :local-repo "lsp-ui")) "posframe" ("2022-10-13 17:33:36" ("emacs") (:type git :flavor melpa :host github :repo "tumashu/posframe" :package "posframe" :local-repo "posframe")) "yasnippet" ("2022-10-13 17:33:36" ("cl-lib") (:type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet" :package "yasnippet" :local-repo "yasnippet"))))
 
 #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-autoloads straight) (autoload 'straight-remove-unused-repos "straight" "Remove unused repositories from the repos directory.
 A repo is considered \"unused\" if it was not explicitly requested via
@@ -1038,10 +1038,612 @@ evaluate `(default-value \\='helm-popup-tip-mode)'.
 The mode's hook is called both when the mode is enabled and when
 it is disabled.
 
-(fn &optional ARG)" t nil) (register-definition-prefixes "helm-utils" '("helm-" "with-helm-display-marked-candidates")) (register-definition-prefixes "helm-x-files" '("helm-")) (provide 'helm-autoloads)) "lsp-volar" ((lsp-volar lsp-volar-autoloads) (register-definition-prefixes "lsp-volar" '("lsp-volar-")) (provide 'lsp-volar-autoloads))))
+(fn &optional ARG)" t nil) (register-definition-prefixes "helm-utils" '("helm-" "with-helm-display-marked-candidates")) (register-definition-prefixes "helm-x-files" '("helm-")) (provide 'helm-autoloads)) "lsp-volar" ((lsp-volar lsp-volar-autoloads) (register-definition-prefixes "lsp-volar" '("lsp-volar-")) (provide 'lsp-volar-autoloads)) "dash" ((dash dash-autoloads) (autoload 'dash-fontify-mode "dash" "Toggle fontification of Dash special variables.
 
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 11 "melpa" nil "gnu-elpa-mirror" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "helm" nil "lsp-volar" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "el-get" (el-get :type git :flavor melpa :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "lsp-volar" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "emacsmirror-mirror" nil "straight" nil "lsp-volar" nil)) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "lsp-volar" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "lsp-volar" nil))))
+This is a minor mode.  If called interactively, toggle the
+`Dash-Fontify mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
 
-("org-elpa" "melpa" "gnu-elpa-mirror" "el-get" "emacsmirror-mirror" "straight" "emacs" "use-package")
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `dash-fontify-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+Dash-Fontify mode is a buffer-local minor mode intended for Emacs
+Lisp buffers.  Enabling it causes the special variables bound in
+anaphoric Dash macros to be fontified.  These anaphoras include
+`it', `it-index', `acc', and `other'.  In older Emacs versions
+which do not dynamically detect macros, Dash-Fontify mode
+additionally fontifies Dash macro calls.
+
+See also `dash-fontify-mode-lighter' and
+`global-dash-fontify-mode'.
+
+(fn &optional ARG)" t nil) (put 'global-dash-fontify-mode 'globalized-minor-mode t) (defvar global-dash-fontify-mode nil "Non-nil if Global Dash-Fontify mode is enabled.
+See the `global-dash-fontify-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-dash-fontify-mode'.") (custom-autoload 'global-dash-fontify-mode "dash" nil) (autoload 'global-dash-fontify-mode "dash" "Toggle Dash-Fontify mode in all buffers.
+With prefix ARG, enable Global Dash-Fontify mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Dash-Fontify mode is enabled in all buffers where
+`dash--turn-on-fontify-mode' would do it.
+
+See `dash-fontify-mode' for more information on Dash-Fontify mode.
+
+(fn &optional ARG)" t nil) (autoload 'dash-register-info-lookup "dash" "Register the Dash Info manual with `info-lookup-symbol'.
+This allows Dash symbols to be looked up with \\[info-lookup-symbol]." t nil) (register-definition-prefixes "dash" '("!cdr" "!cons" "--" "->" "-a" "-butlast" "-c" "-d" "-e" "-f" "-gr" "-i" "-juxt" "-keep" "-l" "-m" "-no" "-o" "-p" "-r" "-s" "-t" "-u" "-value-to-list" "-when-let" "-zip" "dash-")) (provide 'dash-autoloads)) "s" ((s s-autoloads) (register-definition-prefixes "s" '("s-")) (provide 's-autoloads)) "f" ((f f-autoloads) (register-definition-prefixes "f" '("f-")) (provide 'f-autoloads)) "ht" ((ht ht-autoloads) (register-definition-prefixes "ht" 'nil) (provide 'ht-autoloads)) "spinner" ((spinner spinner-autoloads) (autoload 'spinner-create "spinner" "Create a spinner of the given TYPE.
+The possible TYPEs are described in `spinner--type-to-frames'.
+
+FPS, if given, is the number of desired frames per second.
+Default is `spinner-frames-per-second'.
+
+If BUFFER-LOCAL is non-nil, the spinner will be automatically
+deactivated if the buffer is killed.  If BUFFER-LOCAL is a
+buffer, use that instead of current buffer.
+
+When started, in order to function properly, the spinner runs a
+timer which periodically calls `force-mode-line-update' in the
+current buffer.  If BUFFER-LOCAL was set at creation time, then
+`force-mode-line-update' is called in that buffer instead.  When
+the spinner is stopped, the timer is deactivated.
+
+DELAY, if given, is the number of seconds to wait after starting
+the spinner before actually displaying it. It is safe to cancel
+the spinner before this time, in which case it won't display at
+all.
+
+(fn &optional TYPE BUFFER-LOCAL FPS DELAY)" nil nil) (autoload 'spinner-start "spinner" "Start a mode-line spinner of given TYPE-OR-OBJECT.
+If TYPE-OR-OBJECT is an object created with `make-spinner',
+simply activate it.  This method is designed for minor modes, so
+they can use the spinner as part of their lighter by doing:
+    \\='(:eval (spinner-print THE-SPINNER))
+To stop this spinner, call `spinner-stop' on it.
+
+If TYPE-OR-OBJECT is anything else, a buffer-local spinner is
+created with this type, and it is displayed in the
+`mode-line-process' of the buffer it was created it.  Both
+TYPE-OR-OBJECT and FPS are passed to `make-spinner' (which see).
+To stop this spinner, call `spinner-stop' in the same buffer.
+
+Either way, the return value is a function which can be called
+anywhere to stop this spinner.  You can also call `spinner-stop'
+in the same buffer where the spinner was created.
+
+FPS, if given, is the number of desired frames per second.
+Default is `spinner-frames-per-second'.
+
+DELAY, if given, is the number of seconds to wait until actually
+displaying the spinner. It is safe to cancel the spinner before
+this time, in which case it won't display at all.
+
+(fn &optional TYPE-OR-OBJECT FPS DELAY)" nil nil) (register-definition-prefixes "spinner" '("spinner-")) (provide 'spinner-autoloads)) "markdown-mode" ((markdown-mode markdown-mode-autoloads) (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files.
+
+(fn)" t nil) (add-to-list 'auto-mode-alist '("\\.\\(?:md\\|markdown\\|mkd\\|mdown\\|mkdn\\|mdwn\\)\\'" . markdown-mode)) (autoload 'gfm-mode "markdown-mode" "Major mode for editing GitHub Flavored Markdown files.
+
+(fn)" t nil) (autoload 'markdown-view-mode "markdown-mode" "Major mode for viewing Markdown content.
+
+(fn)" t nil) (autoload 'gfm-view-mode "markdown-mode" "Major mode for viewing GitHub Flavored Markdown content.
+
+(fn)" t nil) (autoload 'markdown-live-preview-mode "markdown-mode" "Toggle native previewing on save for a specific markdown file.
+
+This is a minor mode.  If called interactively, toggle the
+`Markdown-Live-Preview mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `markdown-live-preview-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (register-definition-prefixes "markdown-mode" '("defun-markdown-" "gfm-" "markdown")) (provide 'markdown-mode-autoloads)) "lv" ((lv-autoloads lv) (register-definition-prefixes "lv" '("lv-")) (provide 'lv-autoloads)) "lsp-mode" ((lsp-fortran lsp-xml lsp-erlang lsp-iedit lsp-terraform lsp-purescript lsp-pwsh lsp-sqls lsp-camel lsp lsp-mode-autoloads lsp-javascript lsp-steep lsp-clojure lsp-lens lsp-protocol lsp-gdscript lsp-fsharp lsp-nix lsp-tex lsp-idris lsp-magik lsp-nginx lsp-dockerfile lsp-rf lsp-gleam lsp-hack lsp-vhdl lsp-lua lsp-prolog lsp-perl lsp-eslint lsp-ada lsp-modeline lsp-vetur lsp-html lsp-bash lsp-pls lsp-cmake lsp-mint lsp-openscad lsp-zig lsp-icons lsp-actionscript lsp-pylsp lsp-emmet lsp-kotlin lsp-volar lsp-clangd lsp-sorbet lsp-headerline lsp-verilog lsp-d lsp-yaml lsp-svelte lsp-php lsp-dhall lsp-dot lsp-mode lsp-vala lsp-csharp lsp-ruby-syntax-tree lsp-ido lsp-semantic-tokens lsp-elixir lsp-elm lsp-diagnostics lsp-graphql lsp-remark lsp-markdown lsp-crystal lsp-haxe lsp-ansible lsp-json lsp-toml lsp-beancount lsp-solargraph lsp-groovy lsp-typeprof lsp-rust lsp-completion lsp-ocaml lsp-go lsp-pyls lsp-v lsp-vimscript lsp-css lsp-racket lsp-nim lsp-angular lsp-dired lsp-r lsp-marksman lsp-ttcn3 lsp-perlnavigator) (register-definition-prefixes "lsp-actionscript" '("lsp-actionscript-")) (register-definition-prefixes "lsp-ada" '("lsp-ada-")) (register-definition-prefixes "lsp-angular" '("lsp-client")) (register-definition-prefixes "lsp-ansible" '("lsp-ansible-")) (register-definition-prefixes "lsp-bash" '("lsp-bash-")) (register-definition-prefixes "lsp-beancount" '("lsp-beancount-")) (register-definition-prefixes "lsp-camel" '("lsp-camel-")) (autoload 'lsp-cpp-flycheck-clang-tidy-error-explainer "lsp-clangd" "Explain a clang-tidy ERROR by scraping documentation from llvm.org.
+
+(fn ERROR)" nil nil) (register-definition-prefixes "lsp-clangd" '("lsp-c")) (autoload 'lsp-clojure-show-test-tree "lsp-clojure" "Show a test tree and focus on it if IGNORE-FOCUS? is nil.
+
+(fn IGNORE-FOCUS\\=\\?)" t nil) (register-definition-prefixes "lsp-clojure" '("lsp-clojure-")) (define-obsolete-variable-alias 'lsp-prefer-capf 'lsp-completion-provider "lsp-mode 7.0.1") (define-obsolete-variable-alias 'lsp-enable-completion-at-point 'lsp-completion-enable "lsp-mode 7.0.1") (autoload 'lsp-completion-at-point "lsp-completion" "Get lsp completions." nil nil) (autoload 'lsp-completion--enable "lsp-completion" "Enable LSP completion support." nil nil) (autoload 'lsp-completion-mode "lsp-completion" "Toggle LSP completion support.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Completion mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `lsp-completion-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (add-hook 'lsp-configure-hook (lambda nil (when (and lsp-auto-configure lsp-completion-enable) (lsp-completion--enable)))) (register-definition-prefixes "lsp-completion" '("lsp-")) (register-definition-prefixes "lsp-crystal" '("lsp-clients-crystal-executable")) (register-definition-prefixes "lsp-csharp" '("lsp-csharp-")) (register-definition-prefixes "lsp-css" '("lsp-css-")) (define-obsolete-variable-alias 'lsp-diagnostic-package 'lsp-diagnostics-provider "lsp-mode 7.0.1") (define-obsolete-variable-alias 'lsp-flycheck-default-level 'lsp-diagnostics-flycheck-default-level "lsp-mode 7.0.1") (autoload 'lsp-diagnostics-lsp-checker-if-needed "lsp-diagnostics" nil nil nil) (autoload 'lsp-diagnostics--enable "lsp-diagnostics" "Enable LSP checker support." nil nil) (autoload 'lsp-diagnostics-mode "lsp-diagnostics" "Toggle LSP diagnostics integration.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Diagnostics mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `lsp-diagnostics-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (add-hook 'lsp-configure-hook (lambda nil (when lsp-auto-configure (lsp-diagnostics--enable)))) (register-definition-prefixes "lsp-diagnostics" '("lsp-diagnostics-")) (defvar lsp-dired-mode nil "Non-nil if Lsp-Dired mode is enabled.
+See the `lsp-dired-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `lsp-dired-mode'.") (custom-autoload 'lsp-dired-mode "lsp-dired" nil) (autoload 'lsp-dired-mode "lsp-dired" "Display `lsp-mode' icons for each file in a dired buffer.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Dired mode' mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `(default-value \\='lsp-dired-mode)'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (register-definition-prefixes "lsp-dired" '("lsp-dired-")) (register-definition-prefixes "lsp-dockerfile" '("lsp-dockerfile-language-server-command")) (register-definition-prefixes "lsp-dot" '("lsp-dot--dot-ls-server-command")) (register-definition-prefixes "lsp-elixir" '("lsp-elixir-")) (register-definition-prefixes "lsp-elm" '("lsp-")) (register-definition-prefixes "lsp-emmet" '("lsp-emmet-ls-command")) (register-definition-prefixes "lsp-erlang" '("lsp-erlang-server-")) (register-definition-prefixes "lsp-eslint" '("lsp-")) (register-definition-prefixes "lsp-fortran" '("lsp-clients-")) (autoload 'lsp-fsharp--workspace-load "lsp-fsharp" "Load all of the provided PROJECTS.
+
+(fn PROJECTS)" nil nil) (register-definition-prefixes "lsp-fsharp" '("lsp-fsharp-")) (register-definition-prefixes "lsp-gdscript" '("lsp-gdscript-")) (register-definition-prefixes "lsp-gleam" '("lsp-gleam-executable")) (register-definition-prefixes "lsp-go" '("lsp-go-")) (register-definition-prefixes "lsp-graphql" '("lsp-")) (register-definition-prefixes "lsp-groovy" '("lsp-groovy-")) (register-definition-prefixes "lsp-hack" '("lsp-clients-hack-command")) (register-definition-prefixes "lsp-haxe" '("lsp-")) (autoload 'lsp-headerline-breadcrumb-mode "lsp-headerline" "Toggle breadcrumb on headerline.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Headerline-Breadcrumb mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `lsp-headerline-breadcrumb-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (autoload 'lsp-breadcrumb-go-to-symbol "lsp-headerline" "Go to the symbol on breadcrumb at SYMBOL-POSITION.
+
+(fn SYMBOL-POSITION)" t nil) (autoload 'lsp-breadcrumb-narrow-to-symbol "lsp-headerline" "Narrow to the symbol range on breadcrumb at SYMBOL-POSITION.
+
+(fn SYMBOL-POSITION)" t nil) (register-definition-prefixes "lsp-headerline" '("lsp-headerline-")) (register-definition-prefixes "lsp-html" '("lsp-html-")) (register-definition-prefixes "lsp-icons" '("lsp-")) (autoload 'lsp-ido-workspace-symbol "lsp-ido" "`ido' for lsp workspace/symbol.
+When called with prefix ARG the default selection will be symbol at point.
+
+(fn ARG)" t nil) (register-definition-prefixes "lsp-ido" '("lsp-ido-")) (register-definition-prefixes "lsp-idris" '("lsp-idris2-lsp-")) (autoload 'lsp-iedit-highlights "lsp-iedit" "Start an `iedit' operation on the documentHighlights at point.
+This can be used as a primitive `lsp-rename' replacement if the
+language server doesn't support renaming.
+
+See also `lsp-enable-symbol-highlighting'." t nil) (autoload 'lsp-iedit-linked-ranges "lsp-iedit" "Start an `iedit' for `textDocument/linkedEditingRange'" t nil) (autoload 'lsp-evil-multiedit-highlights "lsp-iedit" "Start an `evil-multiedit' operation on the documentHighlights at point.
+This can be used as a primitive `lsp-rename' replacement if the
+language server doesn't support renaming.
+
+See also `lsp-enable-symbol-highlighting'." t nil) (autoload 'lsp-evil-multiedit-linked-ranges "lsp-iedit" "Start an `evil-multiedit' for `textDocument/linkedEditingRange'" t nil) (autoload 'lsp-evil-state-highlights "lsp-iedit" "Start `iedit-mode'. for `textDocument/documentHighlight'" t nil) (autoload 'lsp-evil-state-linked-ranges "lsp-iedit" "Start `iedit-mode'. for `textDocument/linkedEditingRange'" t nil) (register-definition-prefixes "lsp-iedit" '("lsp-iedit--on-ranges")) (register-definition-prefixes "lsp-javascript" '("lsp-")) (register-definition-prefixes "lsp-json" '("lsp-")) (register-definition-prefixes "lsp-kotlin" '("lsp-")) (autoload 'lsp-lens--enable "lsp-lens" "Enable lens mode." nil nil) (autoload 'lsp-lens-show "lsp-lens" "Display lenses in the buffer." t nil) (autoload 'lsp-lens-hide "lsp-lens" "Delete all lenses." t nil) (autoload 'lsp-lens-mode "lsp-lens" "Toggle code-lens overlays.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Lens mode' mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `lsp-lens-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (autoload 'lsp-avy-lens "lsp-lens" "Click lsp lens using `avy' package." t nil) (register-definition-prefixes "lsp-lens" '("lsp-")) (register-definition-prefixes "lsp-lua" '("lsp-")) (register-definition-prefixes "lsp-magik" '("lsp-magik-")) (register-definition-prefixes "lsp-markdown" '("lsp-markdown-")) (register-definition-prefixes "lsp-marksman" '("lsp-marksman-")) (register-definition-prefixes "lsp-mint" '("lsp-clients-mint-executable")) (put 'lsp-enable-file-watchers 'safe-local-variable #'booleanp) (put 'lsp-file-watch-ignored-directories 'safe-local-variable 'lsp--string-listp) (put 'lsp-file-watch-ignored-files 'safe-local-variable 'lsp--string-listp) (put 'lsp-file-watch-threshold 'safe-local-variable (lambda (i) (or (numberp i) (not i)))) (autoload 'lsp--string-listp "lsp-mode" "Return t if all elements of SEQUENCE are strings, else nil.
+
+(fn SEQUENCE)" nil nil) (autoload 'lsp-load-vscode-workspace "lsp-mode" "Load vscode workspace from FILE
+
+(fn FILE)" t nil) (autoload 'lsp-save-vscode-workspace "lsp-mode" "Save vscode workspace to FILE
+
+(fn FILE)" t nil) (autoload 'lsp-install-server "lsp-mode" "Interactively install or re-install server.
+When prefix UPDATE? is t force installation even if the server is present.
+
+(fn UPDATE\\=\\? &optional SERVER-ID)" t nil) (autoload 'lsp-update-server "lsp-mode" "Interactively update (reinstall) a server.
+
+(fn &optional SERVER-ID)" t nil) (autoload 'lsp-update-servers "lsp-mode" "Update (reinstall) all installed servers." t nil) (autoload 'lsp-ensure-server "lsp-mode" "Ensure server SERVER-ID
+
+(fn SERVER-ID)" nil nil) (autoload 'lsp "lsp-mode" "Entry point for the server startup.
+When ARG is t the lsp mode will start new language server even if
+there is language server which can handle current language. When
+ARG is nil current file will be opened in multi folder language
+server if there is such. When `lsp' is called with prefix
+argument ask the user to select which language server to start.
+
+(fn &optional ARG)" t nil) (autoload 'lsp-deferred "lsp-mode" "Entry point that defers server startup until buffer is visible.
+`lsp-deferred' will wait until the buffer is visible before invoking `lsp'.
+This avoids overloading the server with many files when starting Emacs." nil nil) (autoload 'lsp-start-plain "lsp-mode" "Start `lsp-mode' using mininal configuration using the latest `melpa' version
+of the packages.
+
+In case the major-mode that you are using for " t nil) (register-definition-prefixes "lsp-mode" '("defcustom-lsp" "lsp-" "make-lsp-client" "when-lsp-workspace" "with-lsp-workspace")) (define-obsolete-variable-alias 'lsp-diagnostics-modeline-scope 'lsp-modeline-diagnostics-scope "lsp-mode 7.0.1") (autoload 'lsp-modeline-code-actions-mode "lsp-modeline" "Toggle code actions on modeline.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Modeline-Code-Actions mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `lsp-modeline-code-actions-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (define-obsolete-function-alias 'lsp-diagnostics-modeline-mode 'lsp-modeline-diagnostics-mode "lsp-mode 7.0.1") (autoload 'lsp-modeline-diagnostics-mode "lsp-modeline" "Toggle diagnostics modeline.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Modeline-Diagnostics mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `lsp-modeline-diagnostics-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (autoload 'lsp-modeline-workspace-status-mode "lsp-modeline" "Toggle workspace status on modeline.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Modeline-Workspace-Status mode' mode.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `lsp-modeline-workspace-status-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (register-definition-prefixes "lsp-modeline" '("lsp-")) (register-definition-prefixes "lsp-nginx" '("lsp-nginx-server-command")) (register-definition-prefixes "lsp-nim" '("lsp-nim-")) (register-definition-prefixes "lsp-nix" '("lsp-nix-server-path")) (register-definition-prefixes "lsp-ocaml" '("lsp-ocaml-l")) (register-definition-prefixes "lsp-openscad" '("lsp-openscad-")) (register-definition-prefixes "lsp-perl" '("lsp-perl-")) (register-definition-prefixes "lsp-perlnavigator" '("lsp-perlnavigator-")) (register-definition-prefixes "lsp-php" '("lsp-")) (register-definition-prefixes "lsp-pls" '("lsp-pls-")) (register-definition-prefixes "lsp-prolog" '("lsp-prolog-server-command")) (register-definition-prefixes "lsp-protocol" '("dash-expand:&RangeToPoint" "lsp")) (register-definition-prefixes "lsp-purescript" '("lsp-purescript-")) (register-definition-prefixes "lsp-pwsh" '("lsp-pwsh-")) (register-definition-prefixes "lsp-pyls" '("lsp-")) (register-definition-prefixes "lsp-pylsp" '("lsp-")) (register-definition-prefixes "lsp-r" '("lsp-clients-r-server-command")) (register-definition-prefixes "lsp-racket" '("lsp-racket-lang")) (register-definition-prefixes "lsp-remark" '("lsp-remark-server-command")) (register-definition-prefixes "lsp-rf" '("expand-start-command" "lsp-rf-language-server-" "parse-rf-language-server-")) (register-definition-prefixes "lsp-ruby-syntax-tree" '("lsp-ruby-syntax-tree-")) (register-definition-prefixes "lsp-rust" '("lsp-")) (defvar-local semantic-token-modifier-cache (make-hash-table) "A cache of modifier values to the selected fonts.
+This allows whole-bitmap lookup instead of checking each bit. The
+expectation is that usage of modifiers will tend to cluster, so
+we will not have the full range of possible usages, hence a
+tractable hash map.
+
+This is set as buffer-local. It should probably be shared in a
+given workspace/language-server combination.
+
+This cache should be flushed every time any modifier
+configuration changes.") (autoload 'lsp--semantic-tokens-initialize-buffer "lsp-semantic-tokens" "Initialize the buffer for semantic tokens.
+IS-RANGE-PROVIDER is non-nil when server supports range requests." nil nil) (autoload 'lsp--semantic-tokens-initialize-workspace "lsp-semantic-tokens" "Initialize semantic tokens for WORKSPACE.
+
+(fn WORKSPACE)" nil nil) (autoload 'lsp-semantic-tokens--warn-about-deprecated-setting "lsp-semantic-tokens" "Warn about deprecated semantic highlighting variable." nil nil) (autoload 'lsp-semantic-tokens--enable "lsp-semantic-tokens" "Enable semantic tokens mode." nil nil) (autoload 'lsp-semantic-tokens-mode "lsp-semantic-tokens" "Toggle semantic-tokens support.
+
+This is a minor mode.  If called interactively, toggle the
+`Lsp-Semantic-Tokens mode' mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `lsp-semantic-tokens-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+(fn &optional ARG)" t nil) (register-definition-prefixes "lsp-semantic-tokens" '("lsp-")) (register-definition-prefixes "lsp-solargraph" '("lsp-solargraph-")) (register-definition-prefixes "lsp-sorbet" '("lsp-sorbet-")) (register-definition-prefixes "lsp-sqls" '("lsp-sql")) (register-definition-prefixes "lsp-steep" '("lsp-steep-")) (register-definition-prefixes "lsp-svelte" '("lsp-svelte-plugin-")) (register-definition-prefixes "lsp-terraform" '("construct-tf-package" "lsp-t")) (register-definition-prefixes "lsp-tex" '("lsp-")) (register-definition-prefixes "lsp-toml" '("lsp-toml-")) (register-definition-prefixes "lsp-ttcn3" '("lsp-ttcn3-lsp-server-command")) (register-definition-prefixes "lsp-typeprof" '("lsp-typeprof-")) (register-definition-prefixes "lsp-v" '("lsp-v-vls-executable")) (register-definition-prefixes "lsp-vala" '("lsp-clients-vala-ls-executable")) (register-definition-prefixes "lsp-verilog" '("lsp-clients-")) (register-definition-prefixes "lsp-vetur" '("lsp-vetur-")) (register-definition-prefixes "lsp-vhdl" '("ghdl-ls-bin-name" "hdl-checker-bin-name" "lsp-vhdl-" "vhdl-")) (register-definition-prefixes "lsp-vimscript" '("lsp-clients-vim-")) (register-definition-prefixes "lsp-volar" '("lsp-volar-")) (register-definition-prefixes "lsp-xml" '("lsp-xml-")) (register-definition-prefixes "lsp-yaml" '("lsp-yaml-")) (register-definition-prefixes "lsp-zig" '("lsp-zig-zls-executable")) (provide 'lsp-mode-autoloads)) "lsp-ui" ((lsp-ui-flycheck lsp-ui lsp-ui-autoloads lsp-ui-sideline lsp-ui-imenu lsp-ui-util lsp-ui-doc lsp-ui-peek) (autoload 'lsp-ui-mode "lsp-ui" "Toggle language server UI mode on or off.
+\342\200\230lsp-ui-mode\342\200\231 is a minor mode that contains a series of useful UI
+integrations for \342\200\230lsp-mode\342\200\231.  With a prefix argument ARG, enable
+language server UI mode if ARG is positive, and disable it
+otherwise.  If called from Lisp, enable the mode if ARG is
+omitted or nil, and toggle it if ARG is \342\200\230toggle\342\200\231.
+
+(fn &optional ARG)" t nil) (register-definition-prefixes "lsp-ui" '("lsp-ui-")) (register-definition-prefixes "lsp-ui-doc" '("lsp-ui-doc-")) (register-definition-prefixes "lsp-ui-flycheck" '("lsp-ui-flycheck-")) (register-definition-prefixes "lsp-ui-imenu" '("lsp-ui-imenu" "overlay-priority")) (register-definition-prefixes "lsp-ui-peek" '("lsp-")) (register-definition-prefixes "lsp-ui-sideline" '("lsp-ui-sideline")) (register-definition-prefixes "lsp-ui-util" '("lsp-ui-util-")) (provide 'lsp-ui-autoloads)) "posframe" ((posframe-benchmark posframe-autoloads posframe) (autoload 'posframe-workable-p "posframe" "Test posframe workable status." nil nil) (autoload 'posframe-show "posframe" "Pop up a posframe to show STRING at POSITION.
+
+ (1) POSITION
+
+POSITION can be:
+1. An integer, meaning point position.
+2. A cons of two integers, meaning absolute X and Y coordinates.
+3. Other type, in which case the corresponding POSHANDLER should be
+   provided.
+
+ (2) POSHANDLER
+
+POSHANDLER is a function of one argument returning an actual
+position.  Its argument is a plist of the following form:
+
+  (:position xxx
+   :poshandler xxx
+   :font-height xxx
+   :font-width xxx
+   :posframe xxx
+   :posframe-width xxx
+   :posframe-height xxx
+   :posframe-buffer xxx
+   :parent-frame xxx
+   :parent-window-left xxx
+   :parent-window-top xxx
+   :parent-frame-width xxx
+   :parent-frame-height xxx
+   :parent-window xxx
+   :parent-window-width  xxx
+   :parent-window-height xxx
+   :mouse-x xxx
+   ;mouse-y xxx
+   :minibuffer-height xxx
+   :mode-line-height  xxx
+   :header-line-height xxx
+   :tab-line-height xxx
+   :x-pixel-offset xxx
+   :y-pixel-offset xxx)
+
+By default, poshandler is auto-selected based on the type of POSITION,
+but the selection can be overridden using the POSHANDLER argument.
+
+The names of poshandler functions are like:
+
+   `posframe-poshandler-p0.5p0-to-w0.5p1'
+
+which mean align posframe(0.5, 0) to a position(a, b)
+
+1. a = x of window(0.5, 0)
+2. b = y of point(1, 1)
+
+    posframe(p), frame(f), window(w), point(p), mouse(m)
+
+         (0,0)      (0.5,0)      (1,0)
+          +------------+-----------+
+          |                        |
+          |                        |
+          |                        |
+ (0, 0.5) +                        + (1, 0.5)
+          |                        |
+          |                        |
+          |                        |
+          +------------+-----------+
+         (0,1)      (0.5,1)      (1,1)
+
+The alias of builtin poshandler functions are listed below:
+
+1.  `posframe-poshandler-frame-center'
+2.  `posframe-poshandler-frame-top-center'
+3.  `posframe-poshandler-frame-top-left-corner'
+4.  `posframe-poshandler-frame-top-right-corner'
+5.  `posframe-poshandler-frame-bottom-center'
+6.  `posframe-poshandler-frame-bottom-left-corner'
+7.  `posframe-poshandler-frame-bottom-right-corner'
+8.  `posframe-poshandler-window-center'
+9.  `posframe-poshandler-window-top-center'
+10. `posframe-poshandler-window-top-left-corner'
+11. `posframe-poshandler-window-top-right-corner'
+12. `posframe-poshandler-window-bottom-center'
+13. `posframe-poshandler-window-bottom-left-corner'
+14. `posframe-poshandler-window-bottom-right-corner'
+15. `posframe-poshandler-point-top-left-corner'
+16. `posframe-poshandler-point-bottom-left-corner'
+17. `posframe-poshandler-point-bottom-left-corner-upward'
+18. `posframe-poshandler-point-window-center'
+
+by the way, poshandler can be used by other packages easily with
+the help of function `posframe-poshandler-argbuilder'.  like:
+
+   (let* ((info (posframe-poshandler-argbuilder *MY-CHILD-FRAME*))
+          (posn (posframe-poshandler-window-center
+                 `(:posframe-width 800 :posframe-height 400 ,@info))))
+     `((left . ,(car posn))
+       (top . ,(cdr posn))))
+
+ (3) POSHANDLER-EXTRA-INFO
+
+POSHANDLER-EXTRA-INFO is a plist, which will prepend to the
+argument of poshandler function: `info', it will *OVERRIDE* the
+exist key in `info'.
+
+ (4) BUFFER-OR-NAME
+
+This posframe's buffer is BUFFER-OR-NAME, which can be a buffer
+or a name of a (possibly nonexistent) buffer.
+
+buffer name can prefix with space, for example \" *mybuffer*\", so
+the buffer name will hide for ibuffer and `list-buffers'.
+
+ (5) NO-PROPERTIES
+
+If NO-PROPERTIES is non-nil, The STRING's properties will
+be removed before being shown in posframe.
+
+ (6) HEIGHT, MAX-HEIGHT, MIN-HEIGHT, WIDTH, MAX-WIDTH and MIN-WIDTH
+
+These arguments are specified in the canonical character width
+and height of posframe, more details can be found in docstring of
+function `fit-frame-to-buffer',
+
+ (7) LEFT-FRINGE and RIGHT-FRINGE
+
+If LEFT-FRINGE or RIGHT-FRINGE is a number, left fringe or
+right fringe with be shown with the specified width.
+
+ (8) BORDER-WIDTH, BORDER-COLOR, INTERNAL-BORDER-WIDTH and INTERNAL-BORDER-COLOR
+
+By default, posframe shows no borders, but users can specify
+borders by setting BORDER-WIDTH to a positive number.  Border
+color can be specified by BORDER-COLOR.
+
+INTERNAL-BORDER-WIDTH and INTERNAL-BORDER-COLOR are same as
+BORDER-WIDTH and BORDER-COLOR, but do not suggest to use for the
+reason:
+
+   Add distinct controls for child frames' borders (Bug#45620)
+   http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=ff7b1a133bfa7f2614650f8551824ffaef13fadc
+
+ (9) FONT, FOREGROUND-COLOR and BACKGROUND-COLOR
+
+Posframe's font as well as foreground and background colors are
+derived from the current frame by default, but can be overridden
+using the FONT, FOREGROUND-COLOR and BACKGROUND-COLOR arguments,
+respectively.
+
+ (10) RESPECT-HEADER-LINE and RESPECT-MODE-LINE
+
+By default, posframe will display no header-line, mode-line and
+tab-line.  In case a header-line, mode-line or tab-line is
+desired, users can set RESPECT-HEADER-LINE and RESPECT-MODE-LINE
+to t.
+
+ (11) INITIALIZE
+
+INITIALIZE is a function with no argument.  It will run when
+posframe buffer is first selected with `with-current-buffer'
+in `posframe-show', and only run once (for performance reasons).
+
+ (12) LINES-TRUNCATE
+
+If LINES-TRUNCATE is non-nil, then lines will truncate in the
+posframe instead of wrap.
+
+ (13) OVERRIDE-PARAMETERS
+
+OVERRIDE-PARAMETERS is very powful, *all* the valid frame parameters
+used by posframe's frame can be overridden by it.
+
+NOTE: some `posframe-show' arguments are not frame parameters, so they
+can not be overrided by this argument.
+
+ (14) TIMEOUT
+
+TIMEOUT can specify the number of seconds after which the posframe
+will auto-hide.
+
+ (15) REFRESH
+
+If REFRESH is a number, posframe's frame-size will be re-adjusted
+every REFRESH seconds.
+
+ (16) ACCEPT-FOCUS
+
+When ACCEPT-FOCUS is non-nil, posframe will accept focus.
+be careful, you may face some bugs when set it to non-nil.
+
+ (17) HIDEHANDLER
+
+HIDEHANDLER is a function, when it return t, posframe will be
+hide, this function has a plist argument:
+
+  (:posframe-buffer xxx
+   :posframe-parent-buffer xxx)
+
+The builtin hidehandler functions are listed below:
+
+1. `posframe-hidehandler-when-buffer-switch'
+
+ (18) REFPOSHANDLER
+
+REFPOSHANDLER is a function, a reference position (most is
+top-left of current frame) will be returned when call this
+function.
+
+when it is nil or it return nil, child-frame feature will be used
+and reference position will be deal with in Emacs.
+
+The user case I know at the moment is let ivy-posframe work well
+in EXWM environment (let posframe show on the other appliction
+window).
+
+         DO NOT USE UNLESS NECESSARY!!!
+
+An example parent frame poshandler function is:
+
+1. `posframe-refposhandler-xwininfo'
+
+ (19) Others
+
+You can use `posframe-delete-all' to delete all posframes.
+
+(fn BUFFER-OR-NAME &key STRING POSITION POSHANDLER POSHANDLER-EXTRA-INFO WIDTH HEIGHT MAX-WIDTH MAX-HEIGHT MIN-WIDTH MIN-HEIGHT X-PIXEL-OFFSET Y-PIXEL-OFFSET LEFT-FRINGE RIGHT-FRINGE BORDER-WIDTH BORDER-COLOR INTERNAL-BORDER-WIDTH INTERNAL-BORDER-COLOR FONT FOREGROUND-COLOR BACKGROUND-COLOR RESPECT-HEADER-LINE RESPECT-MODE-LINE INITIALIZE NO-PROPERTIES KEEP-RATIO LINES-TRUNCATE OVERRIDE-PARAMETERS TIMEOUT REFRESH ACCEPT-FOCUS HIDEHANDLER REFPOSHANDLER &allow-other-keys)" nil nil) (autoload 'posframe-hide-all "posframe" "Hide all posframe frames." t nil) (autoload 'posframe-delete-all "posframe" "Delete all posframe frames and buffers." t nil) (register-definition-prefixes "posframe" '("posframe-")) (autoload 'posframe-benchmark "posframe-benchmark" "Benchmark tool for posframe." t nil) (register-definition-prefixes "posframe-benchmark" '("posframe-benchmark-alist")) (provide 'posframe-autoloads)) "yasnippet" ((yasnippet yasnippet-autoloads) (autoload 'yas-minor-mode "yasnippet" "Toggle YASnippet mode.
+
+This is a minor mode.  If called interactively, toggle the `yas
+minor mode' mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate `yas-minor-mode'.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
+When YASnippet mode is enabled, `yas-expand', normally bound to
+the TAB key, expands snippets of code depending on the major
+mode.
+
+With no argument, this command toggles the mode.
+positive prefix argument turns on the mode.
+Negative prefix argument turns off the mode.
+
+Key bindings:
+\\{yas-minor-mode-map}
+
+(fn &optional ARG)" t nil) (put 'yas-global-mode 'globalized-minor-mode t) (defvar yas-global-mode nil "Non-nil if Yas-Global mode is enabled.
+See the `yas-global-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `yas-global-mode'.") (custom-autoload 'yas-global-mode "yasnippet" nil) (autoload 'yas-global-mode "yasnippet" "Toggle Yas minor mode in all buffers.
+With prefix ARG, enable Yas-Global mode if ARG is positive; otherwise,
+disable it.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Yas minor mode is enabled in all buffers where `yas-minor-mode-on'
+would do it.
+
+See `yas-minor-mode' for more information on Yas minor mode.
+
+(fn &optional ARG)" t nil) (autoload 'snippet-mode "yasnippet" "A mode for editing yasnippets" t nil) (register-definition-prefixes "yasnippet" '("help-snippet-def" "snippet-mode-map" "yas")) (provide 'yasnippet-autoloads))))
+
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 11 "melpa" nil "gnu-elpa-mirror" nil "el-get" nil "emacsmirror-mirror" nil "straight" nil "use-package" nil "helm" nil "lsp-volar" nil "lsp-mode" nil "dash" nil "f" nil "s" nil "ht" nil "spinner" nil "markdown-mode" nil "lv" nil "lsp-ui" nil "posframe" nil "yasnippet" nil "cl-lib" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "el-get" (el-get :type git :flavor melpa :files ("*.el" ("recipes" "recipes/el-get.rcp") "methods" "el-get-pkg.el") :host github :repo "dimitri/el-get") "emacsmirror-mirror" nil "straight" nil "use-package" (use-package :type git :flavor melpa :files (:defaults (:exclude "bind-key.el" "bind-chord.el" "use-package-chords.el" "use-package-ensure-system-package.el") "use-package-pkg.el") :host github :repo "jwiegley/use-package") "lsp-volar" nil "lsp-mode" (lsp-mode :type git :flavor melpa :files (:defaults "clients/*.el" "lsp-mode-pkg.el") :host github :repo "emacs-lsp/lsp-mode") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "ht" (ht :type git :flavor melpa :files ("ht.el" "ht-pkg.el") :host github :repo "Wilfred/ht.el") "spinner" nil "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "lv" (lv :type git :flavor melpa :files ("lv.el" "lv-pkg.el") :host github :repo "abo-abo/hydra") "lsp-ui" (lsp-ui :type git :flavor melpa :files (:defaults "lsp-ui-doc.html" "resources" "lsp-ui-pkg.el") :host github :repo "emacs-lsp/lsp-ui") "posframe" (posframe :type git :flavor melpa :host github :repo "tumashu/posframe") "yasnippet" (yasnippet :type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet") "cl-lib" nil)) el-get #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "emacsmirror-mirror" nil "straight" nil "lsp-volar" nil "cl-lib" nil)) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "lsp-volar" nil "spinner" (spinner :type git :host github :repo "emacs-straight/spinner" :files ("*" (:exclude ".git"))) "cl-lib" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "lsp-volar" nil "cl-lib" nil))))
+
+("org-elpa" "melpa" "gnu-elpa-mirror" "el-get" "emacsmirror-mirror" "straight" "emacs" "use-package" "lsp-mode" "dash" "f" "s" "ht" "spinner" "markdown-mode" "lv" "lsp-ui")
 
 t
