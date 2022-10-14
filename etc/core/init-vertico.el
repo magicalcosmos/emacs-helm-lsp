@@ -1,21 +1,22 @@
 ;; Enable vertico
 (use-package vertico
+  :straight '(vertico :host github
+                      :repo "minad/vertico"
+                      :branch "main")
+  :bind (:map vertico-map
+         ("C-j" . vertico-next)
+         ("C-k" . vertico-previous)
+         ("C-f" . vertico-exit)
+         :map minibuffer-local-map
+         ("M-h" . dw/minibuffer-backward-kill))
+  :custom
+  (vertico-cycle t)
+  :custom-face
+  (vertico-current ((t (:background "#3a3f5a"))))
   :init
-  (vertico-mode)
+  (vertico-mode))
 
-  ;; Different scroll margin
-  ;; (setq vertico-scroll-margin 0)
-
-  ;; Show more candidates
-  ;; (setq vertico-count 20)
-
-  ;; Grow and shrink the Vertico minibuffer
-  ;; (setq vertico-resize t)
-
-  ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
-  ;; (setq vertico-cycle t)
-  )
-
+  
 ;; Persist history over Emacs restarts. Vertico sorts by history position.
 (use-package savehist
   :init

@@ -110,9 +110,6 @@
 
 (setq lsp-prefer-capf t)
 
-;; (use-package lsp-ivy
-;;   :ensure t
-;;   :after (lsp-mode))
 
   
 (provide 'init-lsp-mode)

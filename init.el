@@ -106,6 +106,9 @@
 ;; 设置自动加载已修改文件
 (global-auto-revert-mode t)
 
+;; Revert Dired and other buffers
+(setq global-auto-revert-non-file-buffers t)
+
 
 ;; 设置弹窗窗口出现纵向分隔的极限值：这个值能在 Mac 1440 分辨率下仍然以上下的方式分隔弹出窗口
 (setq split-width-threshold 180)
@@ -207,6 +210,7 @@
 
 ;; Silence compiler warnings as they can be pretty disruptive
 (setq native-comp-async-report-warnings-errors nil)
+(setq comp-async-report-warnings-errors nil)
 (setq large-file-warning-threshold nil)
 (setq vc-follow-symlinks t)
 (setq ad-redefinition-action 'accept)
@@ -230,10 +234,10 @@
 
 (require 'package)
 ;;optimise loading package
-  (setq package-archives
-        '(("gnu"   . "https://elpa.gnu.org/packages/")
-          ("melpa" . "https://melpa.org/packages/")
-          ("melpa-stable" . "https://stable.melpa.org/packages/")))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("melpa-stable" . "https://stable.melpa.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")
+                         ("elpa" . "https://elpa.gnu.org/packages/")))
 
 ;; set third party of source
 ;; (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
@@ -255,10 +259,12 @@
 
 
 ;; 设置平滑滚动
-(setq scroll-step            1
-      scroll-conservatively  10000)
-(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
-(setq mouse-wheel-progressive-speed nil)
+(unless bl/is-termux
+  (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+  (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+  (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+  (setq scroll-step 1) ;; keyboard scroll one line at a time
+  (setq use-dialog-box nil)) ;; Disable dialog boxes since they weren't working in Mac OSX
 
 
 
@@ -348,6 +354,9 @@
 
 ;(global-set-key (kbd "C-x C-b") 'bufler)
 (global-set-key (kbd "C-x C-b") 'projectile-ibuffer)
+
+;; Use no-littering to automatically set common paths to the new user-emacs-directory
+(use-package no-littering)
 
 
 ;; (defun my-default-window-setup ()

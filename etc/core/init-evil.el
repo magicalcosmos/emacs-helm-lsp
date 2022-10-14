@@ -9,9 +9,13 @@
                   sauron-mode
                   term-mode))
   (add-to-list 'evil-emacs-state-modes mode)))
+
+
 (defun bl/dont-arrow-me-bro ()
 (interactive)
 (message "Arrow keys are bad, you know?"))
+
+
 (use-package evil
   :init
   (setq evil-want-fine-undo t)
@@ -21,6 +25,7 @@
   (setq evil-want-C-u-scroll t)
   (setq evil-want-C-i-jump nil)
   (setq evil-respect-visual-line-mode t)
+  (setq evil-undo-system 'undo-tree)
   :config
   (add-hook 'evil-mode-hook 'bl/evil-hook)
   (evil-mode 1)
@@ -43,16 +48,20 @@
     (evil-global-set-key 'motion (kbd "<up>") 'bl/dont-arrow-me-bro))
 
   (evil-set-initial-state 'messages-buffer-mode 'normal)
-  (evil-set-initial-state 'dashboard-mode 'normal)
-  (evil-set-undo-system 'undo-tree))
+  (evil-set-initial-state 'dashboard-mode 'normal))
 
 (use-package evil-nerd-commenter
   :ensure t)
 
 (use-package evil-collection
   :after evil
-  :ensure t
+  :init
+  (setq evil-collection-company-use-tng nil)  ;; Is this a bug in evil-collection?
+  :custom
+  (evil-collection-outline-bind-tab-p nil)
   :config
+  (setq evil-collection-mode-list
+        (remove 'lispy evil-collection-mode-list))
   (evil-collection-init))
   
 ;; Emacs key bindings

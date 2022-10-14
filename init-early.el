@@ -27,7 +27,7 @@
 
   (require 'init-icons)
 
-  (require 'init-persp-projectile)
+  ;; (require 'init-persp-projectile)
 
   (require 'init-theme)
   (require 'init-dashboard)
@@ -60,11 +60,11 @@
 
 ;; (require 'init-end-executed)
 
-;; (require 'init-corfu)
+(require 'init-corfu)
 
 (require 'init-fzf)
 ;; (require 'init-vterm)
-;; (require 'init-embark)
+(require 'init-embark)
 
 ;; (use-package posframe
 ;;   :straight t);
@@ -77,8 +77,11 @@
 ;;   :straight t)
 ;; (yas-global-mode 1)
 
-(require 'lsp-bridge)
+;; (require 'lsp-bridge)
 ;; (global-lsp-bridge-mode)
+
+;;(require 'init-dired)
+;; (require 'init-org-roam)
 
 (require 'init-vertico)
 (require 'init-orderless)
