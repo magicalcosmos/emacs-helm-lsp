@@ -10,7 +10,7 @@
 ;;(require 'init-helm-lsp)
 ;; (require 'init-hydra)
 (require 'init-flycheck)
- (require 'init-company)
+;;(require 'init-company)
 ;; (require 'init-avy)
 ;; (require 'init-which-key)
 ;; (require 'init-helm-xref)
@@ -61,25 +61,11 @@
 
 ;; (require 'init-end-executed)
 
-(require 'init-corfu)
+;; (require 'init-corfu)
 
 (require 'init-fzf)
 ;; (require 'init-vterm)
 (require 'init-embark)
-
-;; (use-package posframe
-;;   :straight t);
-;; (use-package markdown-mode
-;;   :ensure t
-;;   :mode ("README\\.md\\'" . gfm-mode)
-;;   :init (setq markdown-command "multimarkdown"))
-
-;; (use-package yasnippet
-;;   :straight t)
-;; (yas-global-mode 1)
-
-;; (require 'lsp-bridge)
-;; (global-lsp-bridge-mode)
 
 ;;(require 'init-dired)
 ;; (require 'init-org-roam)
