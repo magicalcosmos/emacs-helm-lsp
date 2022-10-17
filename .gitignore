@@ -19,3 +19,7 @@ amx-items
 cache
 bookmarks
 tramp
+
+var
+var/**/*
+./var

@@ -27,7 +27,7 @@
 
   (require 'init-icons)
 
-  (require 'init-persp-projectile)
+  ;;(require 'init-persp-projectile)
 
   (require 'init-theme)
   (require 'init-dashboard)
@@ -52,6 +52,7 @@
 ;; (require 'init-swiper-ivy-counsel)
 
 (require 'init-projectile)
+
 
 
 ;;(require 'init-org)

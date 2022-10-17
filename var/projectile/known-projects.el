@@ -1,1 +1,0 @@
-("~/workspace/web/Leopard/" "~/.emacs.d/" "~/")

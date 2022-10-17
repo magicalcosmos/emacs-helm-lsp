@@ -1,1 +1,0 @@
-/Users/brodyliao/.emacs.d/straight/repos/web-mode/web-mode.el

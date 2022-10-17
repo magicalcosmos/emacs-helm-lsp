@@ -10,6 +10,10 @@
 
 ;;;***
 
+;;;### (autoloads nil nil ("f-shortdoc.el") (0 0 0 0))
+
+;;;***
+
 (provide 'f-autoloads)
 ;; Local Variables:
 ;; version-control: never

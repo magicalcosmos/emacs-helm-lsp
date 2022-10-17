@@ -7,7 +7,7 @@
 ;;; Generated autoloads from straight.el
 
 (autoload 'straight-remove-unused-repos "straight" "\
-Remove unused repositories from the repos directory.
+Remove unused repositories from the repos and build directories.
 A repo is considered \"unused\" if it was not explicitly requested via
 `straight-use-package' during the current Emacs session.
 If FORCE is non-nil do not prompt before deleting repos.
@@ -36,6 +36,12 @@ action, just return it).
 
 (autoload 'straight-visit-package-website "straight" "\
 Interactively select a recipe, and visit the package's website." t nil)
+
+(autoload 'straight-visit-package "straight" "\
+Open PACKAGE's local repository directory.
+When BUILD is non-nil visit PACKAGE's build directory.
+
+\(fn PACKAGE &optional BUILD)" t nil)
 
 (autoload 'straight-use-package "straight" "\
 Register, clone, build, and activate a package and its dependencies.
@@ -355,7 +361,7 @@ ARGS may be any of the following keywords and their respective values:
 
   - :post-bootstrap (Form)...
       Forms evaluated in the testing environment after boostrapping.
-      e.g. (straight-use-package '(example :type git :host github))
+      e.g. (straight-use-package \\='(example :type git :host github))
 
   - :interactive Boolean
       If nil, the subprocess will immediately exit after the test.
@@ -400,6 +406,14 @@ Return a list PACKAGE's dependents.
 \(fn &optional PACKAGE)" t nil)
 
 (register-definition-prefixes "straight" '("straight-"))
+
+;;;***
+
+;;;### (autoloads nil "straight-ert-print-hack" "straight-ert-print-hack.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from straight-ert-print-hack.el
+
+(register-definition-prefixes "straight-ert-print-hack" '("+without-print-limits"))
 
 ;;;***
 
