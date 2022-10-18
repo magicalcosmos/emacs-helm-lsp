@@ -22,7 +22,7 @@
               (interactive)
               (dired-omit-mode 1)
               (dired-hide-details-mode 1)
-              (unless (or dw/is-termux
+              (unless (or bl/is-termux
                           (s-equals? "/gnu/store/" (expand-file-name default-directory)))
                 (all-the-icons-dired-mode 1))
               (hl-line-mode 1)))

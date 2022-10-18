@@ -16,7 +16,7 @@
 ;; (require 'init-helm-xref)
 ;; (require 'init-dap-mode)
 ;; (require 'init-json-mode)
-;; (require 'init-auto-package-update)
+(require 'init-auto-package-update)
 ;; ;; new config
 ;; (require 'color-rg)
 ;; (require 'init-js-doc)
@@ -67,7 +67,7 @@
 ;; (require 'init-vterm)
 (require 'init-embark)
 
-;;(require 'init-dired)
+(require 'init-dired)
 ;; (require 'init-org-roam)
 
 (require 'init-vertico)

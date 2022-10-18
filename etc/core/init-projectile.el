@@ -98,7 +98,10 @@
 
 (require 'counsel-projectile)
 
-(global-set-key (kbd "M-p") #'+projectile-find-file-dynamic)
+(global-set-key (kbd "M-p") #'counsel-fzf)
+(global-set-key (kbd "C-c p f") #'counsel-fzf)
+(global-set-key (kbd "C-c a") #'counsel-ag)
+(global-set-key (kbd "C-c s") #'counsel-rg)
 
 ;; (use-package project
 ;;   :ensure nil

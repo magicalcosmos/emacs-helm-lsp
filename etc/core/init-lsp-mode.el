@@ -61,6 +61,7 @@
   (add-hook 'dockerfile-mode-hook #'lsp)
   (add-hook 'shell-mode-hook #'lsp)
   (add-hook 'css-mode-hook #'lsp)
+  (add-hook 'scss-mode-hook #'lsp)
   (add-hook 'vue-mode-hook #'lsp)
 )
 
