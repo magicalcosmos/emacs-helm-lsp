@@ -5,8 +5,8 @@
 
 ;; config as below is from https://github.com/emacs-lsp/lsp-mode/blob/master/docs/tutorials/reactjs-tutorial.md
 (require 'init-lsp-mode)
-(require 'init-yasnippet)
 ;; (require 'init-lsp-treemacs)
+(require 'init-yasnippet)
 ;;(require 'init-helm-lsp)
 ;; (require 'init-hydra)
 (require 'init-flycheck)

@@ -1,9 +1,5 @@
-(setq yas-snippet-dirs
-      '("~/.emacs.d/snippets"                 ;; personal snippets
-        ))
-        
-(use-package yasnippet
-  :hook (prog-mode . yas-minor-mode)
-  :config
-  (yas-reload-all))
+(require 'yasnippet)
+(yas-global-mode 1)
+
+
 (provide 'init-yasnippet)
