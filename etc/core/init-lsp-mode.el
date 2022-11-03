@@ -48,13 +48,13 @@
   ;; (setq lsp-eldoc-render-all t)
 
   (add-hook 'prog-mode-hook #'lsp)
-  (add-hook 'go-mode-hook #'lsp)
+  ;; (add-hook 'go-mode-hook #'lsp)
   (add-hook 'python-mode-hook #'lsp)
   (add-hook 'c++-mode-hook #'lsp)
   (add-hook 'c-mode-hook #'lsp)
   (add-hook 'rust-mode-hook #'lsp)
-  (add-hook 'html-mode-hook #'lsp)
-  (add-hook 'js-mode-hook #'lsp)
+  ;; (add-hook 'html-mode-hook #'lsp)
+  ;; (add-hook 'js-mode-hook #'lsp)
   (add-hook 'typescript-mode-hook #'lsp)
   (add-hook 'json-mode-hook #'lsp)
   (add-hook 'yaml-mode-hook #'lsp)
@@ -62,7 +62,7 @@
   (add-hook 'shell-mode-hook #'lsp)
   (add-hook 'css-mode-hook #'lsp)
   (add-hook 'scss-mode-hook #'lsp)
-  (add-hook 'vue-mode-hook #'lsp)
+  ;; (add-hook 'vue-mode-hook #'lsp)
 )
 
 

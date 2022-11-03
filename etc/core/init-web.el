@@ -68,5 +68,6 @@
               ;; 其它开发设置
               (web-dev-attached))))
               
+(setq-default css-indent-offset 2)
 
 (provide 'init-web)

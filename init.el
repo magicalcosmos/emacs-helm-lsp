@@ -211,6 +211,7 @@
 ;; Silence compiler warnings as they can be pretty disruptive
 (setq native-comp-async-report-warnings-errors nil)
 (setq comp-async-report-warnings-errors nil)
+(setq warning-minimum-level :emergency)
 (setq large-file-warning-threshold nil)
 (setq vc-follow-symlinks t)
 (setq ad-redefinition-action 'accept)
