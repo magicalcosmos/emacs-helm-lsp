@@ -10,10 +10,10 @@
 
 
 
-(bl/leader-key-def
-"f"   '(:ignore t :which-key "files")
-"ff"  '(helm-find-files :which-key "open file")
-"fr"  '(helm-recentf :which-key "recent files")
-"fR"  '(revert-buffer :which-key "revert file"))
+;; (bl/leader-key-def
+;; "f"   '(:ignore t :which-key "files")
+;; "ff"  '(helm-find-files :which-key "open file")
+;; "fr"  '(helm-recentf :which-key "recent files")
+;; "fR"  '(revert-buffer :which-key "revert file"))
 
 (provide 'init-helm-lsp)

@@ -1,32 +1,6 @@
 
-In helm-lsp--get-icon:
-helm-lsp.el:72:60: Warning: reference to free variable `lsp-treemacs-theme'
-helm-lsp.el:190:20: Warning: reference to free variable
-    `helm-projectile-fuzzy-match'
-helm-lsp.el:191:15: Warning: reference to free variable
-    `helm-projectile-projects-map'
-helm-lsp.el:199:6: Warning: Unused lexical argument `arg'
-helm-lsp.el:199:6: Warning: Unused lexical variable
-    `helm-ff-transformer-show-only-basename'
-helm-lsp.el:204:29: Warning: reference to free variable
-    `helm-projectile-truncate-lines'
+In helm-xref-format-candidate-long:
+helm-xref.el:121:8: Warning: docstring wider than 80 characters
 
-In helm-lsp--diag-matched:
-helm-lsp.el:215:12: Warning: Unused lexical variable `source\?'
-helm-lsp.el:215:12: Warning: Unused lexical variable `line'
-helm-lsp.el:215:12: Warning: Unused lexical variable `character'
-
-In helm-lsp-diagnostics:
-helm-lsp.el:301:4: Warning: Unused lexical argument `arg'
-
-In end of data:
-helm-lsp.el:205:22: Warning: the function `projectile-prepend-project-name' is
-    not known to be defined.
-helm-lsp.el:203:51: Warning: the function `projectile-project-name' is not
-    known to be defined.
-helm-lsp.el:72:39: Warning: the function `treemacs--find-theme' is not known
-    to be defined.
-helm-lsp.el:72:12: Warning: the function `treemacs-theme->gui-icons' is not
-    known to be defined.
-helm-lsp.el:73:12: Warning: the function `lsp-treemacs-symbol-kind->icon' is
-    not known to be defined.
+In helm-xref-goto-xref-item:
+helm-xref.el:133:39: Warning: Unused lexical variable `summary'
