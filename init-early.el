@@ -7,7 +7,7 @@
 (require 'init-lsp-mode)
 ;; (require 'init-lsp-treemacs)
 (require 'init-yasnippet)
-;;(require 'init-helm-lsp)
+(require 'init-helm-lsp)
 ;; (require 'init-hydra)
 (require 'init-flycheck)
 ;;(require 'init-company)

@@ -98,8 +98,8 @@
 
 ;; (require 'counsel-projectile)
 
-  (global-set-key (kbd "M-p") #'counsel-fzf)
-  (global-set-key (kbd "C-c p f") #'counsel-fzf)
+  (global-set-key (kbd "M-p") #'fzf)
+  (global-set-key (kbd "C-c p f") #'fzf)
   (global-set-key (kbd "C-c a") #'counsel-ag)
   (global-set-key (kbd "C-c s") #'counsel-rg)
 
