@@ -51,57 +51,57 @@
 ;;          ("C-c p s" . projectile-save-project-buffers)))
 
 
-;; (use-package counsel-projectile
-;;   ;; :defer 1
-;;   :bind (("C-c p f" . counsel-projectile-find-file)
-;;          ("C-c p b" . counsel-projectile-switch-to-buffer)
-;;          ("C-x B" . counsel-projectile-switch-to-buffer)
-;;          ("C-c p p" . counsel-projectile-switch-project))
-;;   :init
-;;   (setq counsel-projectile-switch-project-action
-;;         '(1
-;;           ("o" counsel-projectile-switch-project-action "jump to a project buffer or file")
-;;           ("f" counsel-projectile-switch-project-action-find-file "jump to a project file")
-;;           ("d" counsel-projectile-switch-project-action-find-dir "jump to a project directory")
-;;           ("D" counsel-projectile-switch-project-action-dired "open project in dired")
-;;           ("b" counsel-projectile-switch-project-action-switch-to-buffer "jump to a project buffer")
-;;           ("m" counsel-projectile-switch-project-action-find-file-manually "find file manually from project root")
-;;           ("S" counsel-projectile-switch-project-action-save-all-buffers "save all project buffers")
-;;           ("k" counsel-projectile-switch-project-action-kill-buffers "kill all project buffers")
-;;           ("K" counsel-projectile-switch-project-action-remove-known-project "remove project from known projects")
-;;           ("c" counsel-projectile-switch-project-action-compile "run project compilation command")
-;;           ("C" counsel-projectile-switch-project-action-configure "run project configure command")
-;;           ("E" counsel-projectile-switch-project-action-edit-dir-locals "edit project dir-locals")
-;;           ("v" counsel-projectile-switch-project-action-vc "open project in vc-dir / magit / monky")
-;;           ("s" counsel-projectile-switch-project-action-rg "search project with rg")
-;;           ("x" counsel-projectile-switch-project-action-run-vterm "invoke vterm from project root")))
+(use-package counsel-projectile
+  ;; :defer 1
+  :bind (("C-c p f" . counsel-projectile-find-file)
+         ("C-c p b" . counsel-projectile-switch-to-buffer)
+         ("C-x B" . counsel-projectile-switch-to-buffer)
+         ("C-c p p" . counsel-projectile-switch-project))
+  :init
+  (setq counsel-projectile-switch-project-action
+        '(1
+          ("o" counsel-projectile-switch-project-action "jump to a project buffer or file")
+          ("f" counsel-projectile-switch-project-action-find-file "jump to a project file")
+          ("d" counsel-projectile-switch-project-action-find-dir "jump to a project directory")
+          ("D" counsel-projectile-switch-project-action-dired "open project in dired")
+          ("b" counsel-projectile-switch-project-action-switch-to-buffer "jump to a project buffer")
+          ("m" counsel-projectile-switch-project-action-find-file-manually "find file manually from project root")
+          ("S" counsel-projectile-switch-project-action-save-all-buffers "save all project buffers")
+          ("k" counsel-projectile-switch-project-action-kill-buffers "kill all project buffers")
+          ("K" counsel-projectile-switch-project-action-remove-known-project "remove project from known projects")
+          ("c" counsel-projectile-switch-project-action-compile "run project compilation command")
+          ("C" counsel-projectile-switch-project-action-configure "run project configure command")
+          ("E" counsel-projectile-switch-project-action-edit-dir-locals "edit project dir-locals")
+          ("v" counsel-projectile-switch-project-action-vc "open project in vc-dir / magit / monky")
+          ("s" counsel-projectile-switch-project-action-rg "search project with rg")
+          ("x" counsel-projectile-switch-project-action-run-vterm "invoke vterm from project root")))
 
-;;   ;; Default counsel-projectile is very slow. Removing it's usage when switching project
-;;   (advice-add 'counsel-projectile-switch-project-action :override 'counsel-projectile-switch-project-action-find-file))
+  ;; Default counsel-projectile is very slow. Removing it's usage when switching project
+  (advice-add 'counsel-projectile-switch-project-action :override 'counsel-projectile-switch-project-action-find-file))
 
-;; (use-package "+projectile-find-file"
-;;   :ensure nil
-;;   :bind ("M-p" . +projectile-find-file-dynamic)
-;;   :config
+(use-package "+projectile-find-file"
+  :ensure nil
+  :bind ("M-p" . +projectile-find-file-dynamic)
+  :config
 
-;;   (eval-after-load "all-the-icons-ivy"
-;;     '(progn (let ((all-the-icons-ivy-file-commands
-;;                    '(counsel-projectile
-;;                      counsel-projectile-find-file
-;;                      +projectile-find-file-dynamic
-;;                      +projectile-find-file
-;;                      counsel-projectile-find-dir)))
-;;               (all-the-icons-ivy-setup))
-;;             ))
+  (eval-after-load "all-the-icons-ivy"
+    '(progn (let ((all-the-icons-ivy-file-commands
+                   '(counsel-projectile
+                     counsel-projectile-find-file
+                     +projectile-find-file-dynamic
+                     +projectile-find-file
+                     counsel-projectile-find-dir)))
+              (all-the-icons-ivy-setup))
+            ))
 
-;;   (advice-add 'counsel-projectile-find-file :override '+projectile-find-file-dynamic))
+  (advice-add 'counsel-projectile-find-file :override '+projectile-find-file-dynamic))
 
-(require 'counsel-projectile)
+;; (require 'counsel-projectile)
 
-(global-set-key (kbd "M-p") #'counsel-fzf)
-(global-set-key (kbd "C-c p f") #'counsel-fzf)
-(global-set-key (kbd "C-c a") #'counsel-ag)
-(global-set-key (kbd "C-c s") #'counsel-rg)
+  (global-set-key (kbd "M-p") #'counsel-fzf)
+  (global-set-key (kbd "C-c p f") #'counsel-fzf)
+  (global-set-key (kbd "C-c a") #'counsel-ag)
+  (global-set-key (kbd "C-c s") #'counsel-rg)
 
 ;; (use-package project
 ;;   :ensure nil
