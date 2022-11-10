@@ -51,7 +51,7 @@
 
 ;; (require 'init-swiper-ivy-counsel)
 
-(require 'init-projectile)
+;; (require 'init-projectile)
 
 
 

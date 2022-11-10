@@ -235,11 +235,12 @@
 
 (require 'package)
 ;;optimise loading package
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("melpa-stable" . "https://stable.melpa.org/packages/")
-                         ("org" . "https://orgmode.org/elpa/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
-
+  ;; (setq package-archives '(("melpa" . "https://melpa.org/packages/")
+  ;;                          ("melpa-stable" . "https://stable.melpa.org/packages/")
+  ;;                          ("org" . "https://orgmode.org/elpa/")
+  ;;                          ("elpa" . "https://elpa.gnu.org/packages/")))
+(setq package-archives '(("gnu"   . "http://1.15.88.122/gnu/")
+                        ("melpa" . "http://1.15.88.122/melpa/")))
 ;; set third party of source
 ;; (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
 ;;                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
