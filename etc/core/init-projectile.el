@@ -79,26 +79,26 @@
   ;; Default counsel-projectile is very slow. Removing it's usage when switching project
   (advice-add 'counsel-projectile-switch-project-action :override 'counsel-projectile-switch-project-action-find-file))
 
-(use-package "+projectile-find-file"
-  :ensure nil
-  :bind ("M-p" . +projectile-find-file-dynamic)
-  :config
+;; (use-package "+projectile-find-file"
+;;   :ensure nil
+;;   :bind ("M-p" . +projectile-find-file-dynamic)
+;;   :config
 
-  (eval-after-load "all-the-icons-ivy"
-    '(progn (let ((all-the-icons-ivy-file-commands
-                   '(counsel-projectile
-                     counsel-projectile-find-file
-                     +projectile-find-file-dynamic
-                     +projectile-find-file
-                     counsel-projectile-find-dir)))
-              (all-the-icons-ivy-setup))
-            ))
+;;   (eval-after-load "all-the-icons-ivy"
+;;     '(progn (let ((all-the-icons-ivy-file-commands
+;;                    '(counsel-projectile
+;;                      counsel-projectile-find-file
+;;                      +projectile-find-file-dynamic
+;;                      +projectile-find-file
+;;                      counsel-projectile-find-dir)))
+;;               (all-the-icons-ivy-setup))
+;;             ))
 
-  (advice-add 'counsel-projectile-find-file :override '+projectile-find-file-dynamic))
+;;   (advice-add 'counsel-projectile-find-file :override '+projectile-find-file-dynamic))
 
 ;; (require 'counsel-projectile)
 
-  (global-set-key (kbd "M-p") #'fzf)
+  (global-set-key (kbd "M-p") #'counsel-projectile-find-file)
   (global-set-key (kbd "C-c p f") #'fzf)
   (global-set-key (kbd "C-c a") #'counsel-ag)
   (global-set-key (kbd "C-c s") #'counsel-rg)
