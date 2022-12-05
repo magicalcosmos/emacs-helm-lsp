@@ -28,7 +28,7 @@
           treemacs-move-forward-on-expand        nil
           treemacs-no-png-images                 nil
           treemacs-no-delete-other-windows       t
-          treemacs-project-follow-cleanup        nil
+          treemacs-project-follow-cleanup        t
           treemacs-persist-file                  (expand-file-name ".cache/treemacs-persist" user-emacs-directory)
           treemacs-position                      'left
           treemacs-read-string-input             'from-child-frame
@@ -41,7 +41,7 @@
           treemacs-show-cursor                   nil
           treemacs-show-hidden-files             t
           treemacs-silent-filewatch              nil
-          treemacs-silent-refresh                nil
+          treemacs-silent-refresh                t
           treemacs-sorting                       'alphabetic-asc
           treemacs-space-between-root-nodes      t
           treemacs-tag-follow-cleanup            t
@@ -50,7 +50,7 @@
           treemacs-user-header-line-format       nil
           treemacs-width                         35
           treemacs-width-is-initially-locked     t
-          treemacs-workspace-switch-cleanup      nil
+          treemacs-workspace-switch-cleanup      t
           treemacs-is-never-other-window t)
 
     ;; The default width and height of the icons is 22 pixels. If you are

@@ -17,7 +17,7 @@
 ;; (require 'init-helm-xref)
 ;; (require 'init-dap-mode)
 ;; (require 'init-json-mode)
-;; (require 'init-auto-package-update)
+(require 'init-auto-package-update)
 ;; ;; new config
 ;; (require 'color-rg)
 ;; (require 'init-js-doc)
@@ -29,6 +29,7 @@
 (require 'init-icons)
 
   ;;(require 'init-persp-projectile)
+(require 'init-projectile)
 
 (require 'init-theme)
 (require 'init-dashboard)
@@ -51,8 +52,6 @@
 (require 'init-web)
 
 ;; (require 'init-swiper-ivy-counsel)
-
-(require 'init-projectile)
 
 
 

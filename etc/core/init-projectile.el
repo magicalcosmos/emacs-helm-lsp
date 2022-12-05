@@ -52,7 +52,7 @@
 
 
 (use-package counsel-projectile
-  ;; :defer 1
+  :defer 1
   :bind (("C-c p f" . counsel-projectile-find-file)
          ("C-c p b" . counsel-projectile-switch-to-buffer)
          ("C-x B" . counsel-projectile-switch-to-buffer)
