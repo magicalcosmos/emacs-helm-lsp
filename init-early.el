@@ -73,3 +73,4 @@
 (require 'init-vertico)
 (require 'init-orderless)
 (require 'init-consult)
+(require 'init-lsp-volar)
